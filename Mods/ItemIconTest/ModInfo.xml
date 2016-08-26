@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xml>
+	<ModInfo>
+		<Name value="Allocs icon loading test" />
+		<Description value="Example for loading custom item icons" />
+		<Author value="Christian 'Alloc' Illy" />
+		<Version value="1" />
+		<Website value="http://7dtd.illy.bz" />
+	</ModInfo>
+</xml>

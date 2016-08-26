@@ -1,0 +1,391 @@
+12 Oct 2015
+Version 1.0 - initial release
+
+17 Oct 2015
+1.1 
+Fixed mismatch on icon named in new items.xml
+
+18 Oct 2015
+1.2 
+Changed icon for remote to new, more appropriate image, and changed item CustomIcon to "remote_clicker"
+	Changed holdtype for remote to 22
+
+20 Oct 2015
+1.3 
+Cleaned up tabs and spaces in new recipes.xml to increase readability
+	Added Fuel_Log to blocks and recipes from Valmar's mod, created custom icon
+	Added custom icon for garagedooropen and garagedoorclosed
+	Changed firebolt mesh to flaming arrow mesh to see if flame effect works properly - works well, if a little odd-looking
+	Changed firebolt damage modifiers for wood and cloth to 2 from 0.1 and 0 respectively	
+	Changed mp5 magazine size from 30 to 40
+	Added suppressed mp5 to items and recipes, added suppressedmp5 to SilenceIsGolden recipe book
+	Fixed error with naming of Table_Lamp and Table_Lamp_Off
+	
+21 Oct 2015
+1.4 Added horizontalDoor and horizontalDoorway to blocks, horizontalDoorway to recipes - intended to act as a mechanism for hiding bunker access area, it has a concrete texture and requires concrete to build
+	Renamed suppressedmp5 to suppressedSMG in items and recipes, fixing the incorrect name in the recipes.xml
+	
+22 Oct 2015
+1.5 
+Fixed item icon mismatch with steelLegs	
+Revised icon naming to be more consistent
+Revised some item names for consistency
+Created custom icon for Handle
+Created custom icon for scopedHuntingRifleParts
+Removed flashlight and attachment for ironBow and ironCrossbow, as they do not work as I'd hoped
+Added quality levels to rifleScope
+Added ability to hold rifleScope in hand to use as monocular
+Reduced zoom level on hunting rifle scope to be less than the sniper rifle
+Removed item quality from Suppressor, as it makes no difference at present
+Increased repeat crafting experience for steel tools from 2 to 5
+Increased learn experience for steel tools from 20 to 40
+Changed recipe for steelHoe to be more in line with other steel tools
+Changed recipe for steelSledgehammer and steelFireaxe to be more in line with iron tools
+Created custom icon for steelHoe
+Changed recipe for fireBolt to make it comparable to flamingArrow
+Renamed sniperScope to crossbowScope to make its purpose clearer 
+
+23 Oct 2015
+1.5a 
+Changed mesh and holdtype for rifleScope and crossbowScope to something closer to natural if using them as hand-held monoscopes
+
+24 Oct 2015
+1.6
+Added lines at the beginning and end of the config files that allow Notepad++ to check the xml encoding for errors - XML Tools plugin for Notepad++ is *highly* recommended
+Changed mesh on steelStrips to sackPrefab and added dropmesh of same
+Changed mesh on forgedSteel to ingotSteel from ingotIron
+Added brass crafting items of forgedBrass, shortBrassPipe, and brassStrips to items & recipe xmls
+Added brassMallet to items and recipes
+Added icons for forgedBrass, shortBrassPipe, brassStrips, and brassMallet
+Changed Table_Lamp recipe ingredient from ingotBrass to shortBrassPipe
+Adjusted line spacing in new blocks.xml to be in line with new items.xml & new recipes.xml
+
+24 Oct 2015
+1.6a
+Fixed a placement error in the brassMallet recipe
+
+1.6b 
+Fixed placement error in brassMallet recipe (for reals this time)
+Fixed brassHammer to properly display quality
+Adjusted brassHammer damages downwards (to make it less effective than tazasStoneaxe, but still a better entry-level weapon than basic clubs)
+Added attributes DegradationMax and DegradationRate to steelBat
+Removed item quality from Suppressor (I mean it this time)
+
+----->13 Dec 2015<-----
+LathMod 2.0
+Began updating LathMod files for A13
+	Items -> Added iron bow, iron crossbow, forged brass & short brass pipes, brass mallet, lighted helmet versions (cloth hat, cowboy hat, football helmet, iron helmet, kevlar helmet, leather hood, scrap helmet, steel helmet, swat helmet), torch hat (cloth version of G4K helmet from Andy's Mods) 
+	Recipes -> Added recipes for all the above, also scrap cable, beaker, and two recipes for oil
+	
+----->14 Dec 2015<-----
+LathMod 2.1
+Changed ironBow to Iron Bow, brassMallet to Brass Mallet, forgedBrass to Forged Brass
+
+LathMod 2.2
+Disabled lighted steel helmet in items and recipe, as the base item has not yet been added
+
+LathMod 2.3
+Changed Brass Mallet material to metal as a workaround for missing sounds
+Added 1 forgedIron to Brass Mallet recipe to legitimize the mallet for now scrapping to iron
+Added RepairTime and RepairAmount values to scrapBrass
+Changed Brass Mallet repair item to scrapBrass
+
+----->15 Dec 2015<-----
+LathMod 2.4
+Updated for 13.2
+Changed Forged Brass RepairAmount to 100
+Changed Brass Mallet repair item back to Forged Brass
+Reduced Brass Mallet BlockDamage from 10,100 to 10,90
+Added ironCrossbow to crossbowSchematic (item 800)
+Added repeatingCrossbow as a modular weapon (comprised of crossbowStock, crossbowDeck, crossbowLimb, and crossbowScope) along with the schematic that allows construction
+Added item and recipe for Sandpaper (used in crafting crossbowStock) 
+
+LathMod 2.5
+Flashlights still won't work for other weapons (repeatingCrossbow in this case) so removed flashlight code from item and recipe
+
+----->16 Dec 2015<-----
+LathMod 2.6
+Added Poo Launcher and pooBolt (Blame Andy of Andy's Mods on YouTube for this)
+Changed icon for forgedSteel to custom icon from LathMod A12.5
+Changed melee weapon range to 3 for most weapons, and 3.2 for fireaxe and pick
+Added steel armor (boots, leg armor, chest armor, helmet, gloves) and enabled Steel Helmet (Light) and recipes for same
+Added scoped hunting rifle and recipe
+Added suppressed firearms (hunting rifle, scoped hunting rifle, sniper rifle, pistol, SMG, and AK) and recipes
+Added Seagrave Fireaxe and recipe
+Added Remote, rifle scope, scoped hunting rifle parts, suppressor and recipes
+Added recipe for Fuel Log
+Added items to loot.xml
+Changed recipe for suppressed weapons - assembly now requires a suppressed barrel for each weapon 
+Removed garage doors, drawbridges, and horizontal door from recipes and blocks until blocks in A13 are better understood
+Changed ak47_barrel customicon from pistolBarrel to ak47_barrel (reused old sniperRifle_barrel_2 from 12x)
+Changed chainsaw parts from augerParts to chainsawParts (chainsawParts were added in 13.2 or 13.3)
+Disabled suppressedSniperRifle (and suppressedsniperRifleBarrel) as it fails to assemble properly
+
+----->17 Dec 2015<-----
+LathMod 2.6.1
+Fixed numbering error in items.xml that prevented the suppressed sniper rifle from assembling properly. Both recipe and item have been re-enabled
+
+LathMod 2.6.2
+Changed pooBolt recipe to use clayLump instead of clay
+
+LathMod 2.6.3
+Changed Torch Hat to use plant fiber hat instead of cloth hood, to make it more easily accessible in the early game. Retains the plant fiber cooling effect and waterproofing, but lacks all other protections
+Changed "ForgedBrass" to "forgedBrass", to fix a problem with repairing the brass mallet
+
+----->18 Dec 2015<-----
+LathMod 2.7
+Updated to Alpha 13.4
+Fixed steelChestArmor so it appears in the correct clothing slot (chest rather than jacket)
+Removed radiation and fire protection from steel armor to make it more in line with iron armor
+Changed name of steelGloves to steelBracers
+Changed name of steelLegArmor to steelGreaves
+Added Ziplock Bag and Bagged Meat from Andy's Mods
+Changed icons for steelBracers, SteelGreaves, and steelBoots and respective schematics
+Changed icon for steelHelmet and Steel Helmet (Light) to be tinted versions of ironHelmet
+Renamed pooBolt and pooLauncher to poopBolt and poopLauncher
+Added Poop Cannon (Poop Cannon Barrel, Poop Cannon Receiver, Poop Cannon Parts, Poop Cannon Stock) and Fertilizer Round with associated recipes from Andy's Mods (Note that the fertilizer round requires a steel crossbow bolt, effectively making this a later-game weapon)
+Added Ziplock Bag to loot lists
+Changed Brass Mallet groups from Ammo/Weapons to Tools/Traps, crafting skill group to Tool Smithing
+Adjusted Brass Mallet damage slightly upward vs blocks
+
+LathMod 2.7a
+Added scopedHuntingRifle to huntingRifleSchematic
+
+LathMod 2.7b
+Fixed spelling error in recipes for steelBracers
+
+----->20-22 Dec 2015<-----
+LathMod 2.8
+Updated to Alpha 13.5
+Added Red Eagle LXIX's HUD mod
+Nerfed zombie dog damage and speed in attempt to muzzle four-footed chainsaw of doom
+Changed steel armor meshes to use iron mesh with tint
+Added SylenThunder's lighted glass blocks
+Reduced Seagrave Fireaxe's delay and increased damage modifiers vs wood, metal, and stone to 1.5
+Added <property name="ActionSkillGroup" value="Tool Smithing"/> to Seagrave Fireaxe schematics to see if reading multiple times adds to that skill, also added lines <property name="ActionExp" value="100"/>, <property name="ActionExpBonusMultiplier" value="10"/>
+Adjusted stack sizes for bandages, beverages, jars, cloth, oil, feathers, honey
+
+----->29 Dec 2015<-----
+LathMod 2.9
+Updated to Alpha 13.6
+Added property group resources to fuel log
+Added property group building to lighted glass blocks
+Removed ActionSkillGroup from Seagrave Fireaxe, as it currently doesn't do what I want it to
+
+----->30 Dec 2015<-----
+LathMod 2.91
+Temporarily disabled steel armor due to an intermittent null reference exception that seems to occur randomly when armor is generated by loot. So far the error is elusive, as it does not occur with any reliable regularity.
+
+----->31 Dec 2015<-----
+LathMod 2.92
+Re-enabled steel armor, but commented out the DescriptionKey property - that may be the culprit. Keeping steel armor as craft-only for the time being to reduce chances of spawned loot generating null reference exception in case it's not that
+Renamed fireglass to Fire Glass, candleglass to Candle Glass, torchglass to Torch Glass
+Added long drawbridge. Where [X] is the bridge block, and 0 is open space, it deploys this way: 000[X]0000, and extends to XXX[X]XXXX. This will require a support column for the bridge block to sit on, but does extend to a long bridge. The actual size of the bridge can be adjusted to fit. It currently is set to 1,1,8; changing the last value adjusts the length. It is currently stable at its current length.
+Added stone bridge - a shorter drawbridge that matches concrete instead of reinforced wood. It deploys 000[X]000, and extends XXX[X]XXX. This is essentially the horizontal door from Alpha 12.5.
+Added garage door from 12.5, more or less unchanged. 
+
+----->3 Jan 2016<-----
+LathMod 2.93
+Added repair function to brass mallet
+
+----->26 Jan 2016<-----
+Lathmod 2.10
+Added Carlzilla's recipes for upgrading arrows and bolts
+Reduced the length of the long bridge span to 7 (extends out 3 in each direction instead of 4) and short bridge to 5 (extends out 2) to deal with problem of missing end pieces
+Changed canpickup property of haybales to false to prevent accidentally picking them up (can still be destroyed to pick up bales)
+Changed canpickup property of candleglass, torchglass, and fireglass to true
+Added schematic for Leather Duster and custom icon for schematic
+Removed leatherDuster from invisibleRecipesForRepairCost gating book
+Added leatherDusterSchematic to loot table rare books
+
+----->28 Mar 2016<-----
+LathMod 3.0
+Updated for Alpha 14
+Includes Unofficial XML Fixes 2.1, Magoli's CompoPack_18, and Red Eagle LXIX's HUD mods
+Changed new items id number to start at 2000
+Adapted weapon and tool parts to align with A14 in both items.xml and recipes.xml (Part 1 - modifying the custom parts to use the same convention will come later)
+Steel armor is currently broken - it does not display properly on the paper doll, so it has been disabled in items, recipes, and loot.xml files
+
+----->29 Mar 2016<-----
+LathMod 3.1
+Updated for Alpha 14.2
+Includes Unofficial XML Fixes 2.7, Magoli's CompoPack_18, and Red Eagle LXIX's HUD (LathMod Variant) mods 
+Changed Red Eagles's HUD to remove custom day/time and restore default view
+Changed fuelLog to Fuel Log (as there's no gating book, might as well display it properly in the crafting menu)
+Increased item stack values for gasCan, aloeCream, bandage, foodHoney, foodYuccaJuice, canMurkyWater, canBoiledWater, bottledRiverWater, bottledWater, goldenRodTea, redTea, coffee, beer, grainAlcohol, emptyJar
+Added canPears to loot table cannedFood
+Changed steel armor to A14 convention, hopefully fixing the null reference exception that ocurred in A13
+Changed custom recipes to A14 convention
+Changed HUD Day/Time line to height=20 fontsize=20 justify=left
+Changed HUD player position and bedroll position color to 255,255,255,255 to make it more legible and to match the day/time
+Changed SeagraveFireaxe actionskillgroup from bladed weapons to mining tools
+Changed Brass mallet actionskillgroup from blunt weapons to construction tools
+Disabled drawbridges and garage door until I find a better way to build them
+
+TO DO: 
+Change suppressed weapons and weapon parts to line up with new changes to weapon conventions and values
+Add localization text for all new items
+Fix missing icons for poop cannon and poop cannon parts
+
+
+----->30 Mar 2016<-----
+LathMod 3.11
+Updated for Alpha 14.2
+Includes Unofficial XML Fixes 2.91, Red Eagle LXIX's HUD (LathMod Variant) 
+Magoli's CompoPack_18 has been removed due to serious lag issues, though I still recommend downloading and using it
+Fixed duplicate destroy event entries for dirt, grass, bridgeMetalRivetBlock
+Fixed missing icons for poop cannon and poop cannon parts
+
+TO DO: 
+Change suppressed weapons and weapon parts to line up with new changes to weapon conventions and values
+Add localization text for all new items
+
+
+----->31 Mar 2016<-----
+LathMod 3.12
+Updated for Alpha 14.2
+Includes Unofficial XML Fixes 2.93, Red Eagle LXIX's HUD (LathMod Variant), stallionsden's Backpack Expansion (75 slots) 
+Added Required configs folder, which contains material.xml, entityclasses.xml, and spawning.xml. These files are part of the Unofficial XML Fixes pack, and need to be copied into the configs folder, overwriting the existing files. This prevents a possible error caused by animalHide missing from the vanilla materials.xml. 
+Increased wood stack size to 2000
+Backpack expanded to 75 slots - REQUIRES updated Assembly-CSharp.dll, located in the mod folder \Required Configs\DLL for Expanded Backpack - REQUIRED\7DaysToDie_Data\Managed\, which mimics the folder it needs to be copied to (MAKE SURE YOU BACK UP THE ORIGINAL FIRST)
+
+TO DO: 
+Change suppressed weapons and weapon parts to line up with new changes to weapon conventions and values
+Add localization text for all new items
+
+
+----->31 Mar 2016<-----
+LathMod 3.13
+Updated for Alpha 14.2
+Includes Unofficial XML Fixes 2.93, Red Eagle LXIX's HUD (LathMod Variant), stallionsden's Backpack Expansion (75 slots) 
+Fixed missing recipes (whoops)
+
+TO DO: 
+Change suppressed weapons and weapon parts to line up with new changes to weapon conventions and values
+Add localization text for all new items
+
+----->2 Apr 2016<-----
+LathMod 3.14
+Updated for Alpha 14.2
+Includes Unofficial XML Fixes 2.93, Red Eagle LXIX's HUD v0.09 (LathMod Variant), stallionsden's Backpack Expansion (75 slots) 
+Fixed wonky wielding of brass mallet
+Enlarged Time/Date in the HUD
+Increased cloth stack size to 500
+Updated Red's HUD to v0.09 and customized to LathMod Variant
+Added shortBrassPipe as possible harvest item to sinks and air conditioners
+Added localization text for new items and blocks
+Fixed ID conflict with leatherDusterSchematic
+
+TO DO:
+Change suppressed weapons and weapon parts to line up with new changes to weapon conventions and values
+
+----->2 Apr 2016<-----
+LathMod 3.15
+Updated for Alpha 14.2
+Includes Unofficial XML Fixes 2.93, Red Eagle LXIX's HUD v0.09 (LathMod Variant), stallionsden's Backpack Expansion (75 slots) 
+Added new perk, Silent But Deadly, which enables the player to craft suppressed weapons based on gunsmithing level. The skillbook for suppressed weapons (Silence Is Golden) has been disabled.
+Fixed incorrect item description for iron bow
+
+TO DO:
+Change suppressed weapons and weapon parts to line up with new changes to weapon conventions and values
+Complete writing localization text for new items
+
+----->3 Apr 2016<-----
+LathMod 3.15
+Updated for Alpha 14.3
+Includes Unofficial XML Fixes 2.95, Red Eagle LXIX's HUD v0.09 (LathMod Variant), stallionsden's Backpack Expansion (75 slots) 
+Added new perk, Silent But Deadly, which enables the player to craft suppressed weapons based on gunsmithing level. The skillbook for suppressed weapons (Silence Is Golden) has been disabled.
+Fixed incorrect item description for iron bow
+Added Poop Cannon and its parts to the rocket launcher schematic
+Changed suppressed weapons and weapon parts to line up with new changes to weapon conventions and values
+Completed writing localization text for new items
+Aded 2 springs to recipe for partscrossbowStock
+Changed recipe for partsSuppressor, replacing shortMetalPipe with shortBrassPipe
+
+----->4 Apr 2016<-----
+LathMod 3.2
+Updated for Alpha 14.4
+Includes Unofficial XML Fixes 2.99, Red Eagle LXIX's HUD v0.10 (LathMod Variant), stallionsden's Backpack Expansion (75 slots), three08's Rebreather
+Cleaned up localization on several items
+Changed custom icons for the Poop Cannon, its parts, and the Fertilizer Round
+Added three08's Rebreather to mod
+Added sandpaper to the recipe for partsPoopCannonStock
+Split the Silent But Deadly perk into 5 separate parts, I-V, to fix the problem of the recipe unlocks not displaying properly
+Rebalanced the repeating crossbow's component parts to be more in line with firearm parts
+Rebalanced the suppressed firearm parts to be more in line with their louder cousins
+Rebalanced the poop launcher to be even less effective but just as amusing
+
+----->6 Apr 2016<-----
+LathMod 3.21
+Updated for Alpha 14.4
+Includes Unofficial XML Fixes 2.99, Red Eagle LXIX's HUD v0.10 (LathMod Variant), stallionsden's Backpack Expansion (75 slots), three08's Rebreather
+Fixed display error in HUD
+Changed recipe for Candle/torch/fireglass to use glassCTRSheet instead of unit_glass, and removed the forge restriction, so it can be crafted in workbench or inventory
+Updated backpack expansion DLL to 14.4
+Re-enabled the holdbreathduration in progression.xml
+Fixed azaleas to be able to be pickedup again
+Added craftable brass flashlight that is combined from four craftable parts - brassFlashlightBarrel, brassFlashlightCap, headlight, and potatoBattery
+Changed lighted helmet recipes to use the brass flashlight instead of flashlight02
+Increased stack size of feathers to 400
+
+TO DO:
+Change icons for lighted helmets to indicate change to brass flashlight
+
+----->9 Apri 2016<-----
+LathMod 3.3
+Updated for Alpha 14.5
+Includes Unofficial XML Fixes 3.0, KorruptkSwades' HUD Modernization 2.0, stallionsden's Backpack Expansion (75 slots), three08's Rebreather
+Changed HUD from Red Eagle LXIX's to KorruptkSwades' version, although I hope to see his modified 2.5 hud with the stat bars on the lower left sometime soon
+
+TO DO:
+Change icons for lighted helmets to indicate change to brass flashlight
+
+----->5 May 2016<-----
+LathMod 3.4
+Updated for Alpha 14.6
+Includes Unofficial XML Fixes 3.08, Tritox's Origin UI HUD 1.0, stallionsden's Backpack Expansion (75 slots), three08's Rebreather
+Reduced crafting time for bagging meat
+Added recipe for bellows using leather
+Added perk Masamune, Jr, which allows crafting carbon steel and a kukri
+Added recipes and items for carbon steel and kukri
+Added localization text for carbon steel, kukri, and Masamune, Jr.
+Changed HUD UI to Tritox's Origin UI, as KorruptkSwades no longer appears to be updating his HUD
+
+TO DO:
+Change icons for lighted helmets to indicate change to brass flashlight
+Add new workbench for crafting carbon steel
+
+----->20 Aug 2016 <-----
+LathMod 3.5
+Includes Unofficial XML Fixes 3.14, Tritox's Origin UI HUD 1.0 (14.7 experimental), stallionsden's Backpack Expansion (75 slots), three08's Rebreather
+Repeating crossbow is no longer 'assembled', but is crafted like any other item - changed due to code change by Fun Pimps
+Added Valmar's Weed Cutter
+Fixed Silent But Deadly descriptions to be more specific
+Fixed minor typo in Masamune, Jr text
+Changed Silent But Deadly requirements to be gun smith level only, no longer requiring previous SBD skill to purchase (e.g., allowing purchase of level 3 without owning levels 1 or 2)
+
+TO DO:
+Change icons for lighted helmets to indicate change to brass flashlight
+Add new workbench for crafting carbon steel
+
+----->23 Aug 2016<-----
+LathMod 3.51
+Includes Unofficial XML Fixes 3.14, Tritox's Origin UI HUD 1.0 (14.7 experimental), stallionsden's Backpack Expansion (75 slots), three08's Rebreather
+Changed Silent But Deadly perk levels 2-5 to include suppressor recipe
+
+TO DO:
+Change icons for lighted helmets to indicate change to brass flashlight
+Add new workbench for crafting carbon steel
+
+----->25 Aug 2016<-----
+LathMod 3.52
+Includes Unofficial XML Fixes 3.14, Tritox's Origin UI HUD 1.0 (14.7 experimental), stallionsden's Backpack Expansion (75 slots), three08's Rebreather, Valmar's Expanded Traps
+Added Valmar's Expanded traps
+Changed recipe for carbon steel to require crafting at a workbench
+Added recipes for cutting iron and steel arrowheads off arrows, usable only at the workbench
+Added chance to loot shortBrassPipe when disassembling refrigerators, air conditioners and sinks
+Added recipes and localization text for metal pipes (straight, corner, joint, cap, valve, and flange)
+Added refinedCoal, a more efficient coal that burns longer. Can be crafted at a workbench
+
+TO DO:
+Change icons for lighted helmets to indicate change to brass flashlight
