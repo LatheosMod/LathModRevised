@@ -235,10 +235,12 @@
 		<recipe name="forgedSteel" unlock_level="1"/>
 		<recipe name="steelArrowHead" unlock_level="1"/>
 	</perk>
+	<!-- Workbench replaced with Advanced Tooling
 	<perk name="Workbench" icon="resource" description_key="workbenchSkillDesc" title_key="workbench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="20"/>
 		<recipe name="workbench" unlock_level="1"/>
 	</perk>
+	-->
 	<action_skill name="Pistols" icon="pistol" description_key="pistolsDesc" title_key="pistols" group="firearms">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04" />
@@ -1061,6 +1063,13 @@
 		<requirement skill_level="1" required_skill_name="Steel Smithing" required_skill_level="1"/>
 		<recipe name="kukri" unlock_level="1"/>
 		<recipe name="carbonSteel" unlock_level="1"/>
+	</perk>
+	
+	<perk name="Advanced Tooling" icon="resource" description_key="AdvancedToolingSkillDesc" title_key="AdvancedToling" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="20"/>
+		<recipe name="workbench" unlock_level="1"/>
+		<recipe name="forge" unlock_level="1"/>
+		<recipe name="calipers" unlock_level="1"/>
 	</perk>
 	
 <!-- End New Perks -->	
