@@ -1065,7 +1065,7 @@
 		<recipe name="carbonSteel" unlock_level="1"/>
 	</perk>
 	
-	<perk name="Advanced Tooling" icon="resource" description_key="AdvancedToolingSkillDesc" title_key="AdvancedToling" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+	<perk name="Advanced Tooling" icon="resource" description_key="AdvancedToolingSkillDesc" title_key="AdvancedTooling" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="20"/>
 		<recipe name="workbench" unlock_level="1"/>
 		<recipe name="forge" unlock_level="1"/>
