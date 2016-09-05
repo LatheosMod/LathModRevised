@@ -389,3 +389,13 @@ Added refinedCoal, a more efficient coal that burns longer. Can be crafted at a 
 
 TO DO:
 Change icons for lighted helmets to indicate change to brass flashlight
+
+----->28 Aug 2016<-----
+LathMod 3.53
+Includes Unofficial XML Fixes 3.14, Tritox's Origin UI HUD 1.0 (14.7 experimental), stallionsden's Backpack Expansion (75 slots), three08's Rebreather, Valmar's Expanded Traps
+Put Forge into Workbench perk, renamed Advanced Tooling
+Added new challenge quest (A Shitty Way to Die) which uses the poop launcher to kill 5 zombies
+
+TO DO:
+Change icons for lighted helmets to indicate change to brass flashlight
+
