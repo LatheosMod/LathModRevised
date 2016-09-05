@@ -8995,6 +8995,15 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DescriptionKey" value="refinedCoalDesc" />
 </item>
 <!-- End Refined Coal -->
+
+<!-- Custom Quest Items -->
+<item id="2071" name="qc_shittywaytodie">
+	<property name="Extends" value="challengeQuestMaster" />
+	<property class="Action1">
+		<property name="QuestGiven" value="challenge_shittywaytodie" />
+	</property>
+</item>
+<!-- End Custom Quest Items -->
 	
 <!-- End Custom Items -->
 
