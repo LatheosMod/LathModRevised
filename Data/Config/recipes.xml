@@ -384,7 +384,7 @@ tooltip?
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="blueberrySeed" count="1" scrapable="False">
+<recipe name="blueberrySeed" count="3" scrapable="False">
 	<ingredient name="blueberries" count="1"/>
 </recipe>
 
@@ -903,11 +903,11 @@ tooltip?
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="cornSeed" count="1" scrapable="False">
+<recipe name="cornSeed" count="3" scrapable="False">
 	<ingredient name="corn" count="1"/>
 </recipe>
 
-<recipe name="cottonSeed" count="1" scrapable="False">
+<recipe name="cottonSeed" count="3" scrapable="False">
 	<ingredient name="plantedCotton3Harvest" count="1"/>
 </recipe>
 
@@ -1084,7 +1084,7 @@ tooltip?
 	<ingredient name="bottledWater" count="1"/>
 </recipe>
 
-<recipe name="goldenrodSeed" count="1" scrapable="False">
+<recipe name="goldenrodSeed" count="3" scrapable="False">
 	<ingredient name="plantedGoldenrod3Harvest" count="1"/>
 </recipe>
 
@@ -1531,7 +1531,7 @@ tooltip?
 	<ingredient name="yuccaFibers" count="5"/>
 </recipe>
 
-<recipe name="potatoSeed" count="1" scrapable="False">
+<recipe name="potatoSeed" count="3" scrapable="False">
 	<ingredient name="potato" count="1"/>
 </recipe>
 
