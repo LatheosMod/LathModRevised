@@ -1166,7 +1166,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="DismembermentBonus" value="0.001,0.005"/>
 	</property>
 	<property name="Group" value="Tools/Traps" />
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="ActionSkillGroup" value="Carpentry Tools"/>
 	<property name="CraftingSkillGroup" value="Tool Smithing"/>
 </item>
 
@@ -1552,7 +1552,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Barrel" value="partsChainsaw_blade" />
 	</property>
 	<property name="Group" value="Tools/Traps" />
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="ActionSkillGroup" value="Carpentry Tools"/>
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
@@ -8565,7 +8565,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>                                              
 	<property name="Group" value="Tools/Traps" />
 	<property name="DescriptionKey" value="SeagraveFireaxeDesc"/>
-	<property name="ActionSkillGroup" value="Mining Tools"/>
+	<property name="ActionSkillGroup" value="Carpentry Tools"/>
 	<property name="CraftingSkillGroup" value="Tool Smithing"/>
 </item>
 
@@ -9004,6 +9004,42 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 </item>
 <!-- End Custom Quest Items -->
+
+<!-- D Cell Battery -->
+<item id="2072" name="dcellBattery">
+    <property name="CustomIcon" value="dcellBattery" />
+	<property name="Meshfile" value="Items/Misc/sackPrefab" />
+	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
+	<property name="HoldType" value="21" />
+	<property name="Material" value="lead" />
+	<property name="Stacknumber" value="50" /> <!-- STK resource -->
+	<property name="FuelValue" value="2" />
+	<property name="Weight" value="6" />
+	<property name="Group" value="Resources" />
+	<property name="DescriptionKey" value="dcellBatteryDesc" />
+</item>
+<!-- End D Cell Battery -->
+
+<!-- Salted Meat -->
+<item id="2073" name="saltedMeat">
+    <property name="CustomIcon" value="saltedMeat" />
+	<property name="DescriptionKey" value="saltedMeatDesc" />
+	<property name="Meshfile" value="Items/Misc/parcelPrefab" />
+	<property name="Material" value="organic" />
+	<property name="HoldType" value="31" />
+	<property name="Stacknumber" value="50" /> <!-- STK food -->
+	<property class="Action1">
+		<property name="Class" value="Eat" />
+		<property name="Delay" value="2.1" />
+		<property name="Use_time" value="..." />
+		<property name="Gain_food" value="8" />
+		<property name="Gain_water" value="-10" />
+		<property name="Gain_wellness" value="0" />
+		<property name="Sound_start" value="UseActions/player_eating" />
+	</property>
+	<property name="Group" value="Food/Cooking" />
+</item>
+<!-- End Salted Meat -->
 	
 <!-- End Custom Items -->
 

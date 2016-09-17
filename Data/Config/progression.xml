@@ -1072,6 +1072,46 @@
 		<recipe name="calipers" unlock_level="1"/>
 	</perk>
 	
+	
+<!-- Carpentry skill and perk -->
+	<action_skill name="Carpentry Tools" icon="mining" description_key="carpentryToolsDesc" title_key="carpentryTools" group="tools">
+		<effect name="BlockDamage">
+			<multiply skill_level="1,10" value="1.00,1.32"/>
+			<multiply skill_level="10,20" value="1.32,1.45"/>
+			<multiply skill_level="20,30" value="1.45,1.55"/>
+			<multiply skill_level="30,40" value="1.55,1.63"/>
+			<multiply skill_level="40,50" value="1.63,1.71"/>
+			<multiply skill_level="50,60" value="1.71,1.77"/>
+			<multiply skill_level="60,70" value="1.77,1.84"/>
+			<multiply skill_level="70,80" value="1.84,1.89"/>
+			<multiply skill_level="80,90" value="1.89,1.95"/>
+			<multiply skill_level="90,100" value="1.95,2.00"/>
+		</effect>
+	</action_skill>
+	
+	<perk name="Paul Bunyan" icon="mining" description_key="paulBunyanDesc" title_key="paulBunyan" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+		<requirement perk_level="1" required_skill_name="Carpentry Tools" required_skill_level="1"/>
+		<requirement perk_level="2" required_skill_name="Carpentry Tools" required_skill_level="20"/>
+		<requirement perk_level="3" required_skill_name="Carpentry Tools" required_skill_level="40"/>
+		<requirement perk_level="4" required_skill_name="Carpentry Tools" required_skill_level="60"/>
+		<requirement perk_level="5" required_skill_name="Carpentry Tools" required_skill_level="80"/>
+		<effect name="BlockDamage">
+			<multiply skill_level="1" value="1.2"/>
+			<multiply skill_level="2" value="1.4"/>
+			<multiply skill_level="3" value="1.6"/>
+			<multiply skill_level="4" value="1.8"/>
+			<multiply skill_level="5" value="2.0"/>
+		</effect>
+		<effect name="StaminaDegradation">
+			<multiply skill_level="1" value="0.9"/>
+			<multiply skill_level="2" value="0.8"/>
+			<multiply skill_level="3" value="0.7"/>
+			<multiply skill_level="4" value="0.6"/>
+			<multiply skill_level="5" value="0.5"/>
+		</effect>
+	</perk>
+<!-- End Carpentry skill and perk -->
+	
 <!-- End New Perks -->	
 </skills>
 

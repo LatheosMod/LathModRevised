@@ -2049,6 +2049,13 @@ tooltip?
     <ingredient name="potatoBattery" count="1" />
 </recipe>
 
+<recipe name="brassFlashlight" count="1" scrapable="True" >
+    <ingredient name="brassFlashlightBarrel" count="1" />
+    <ingredient name="brassFlashlightCap" count="1" />
+    <ingredient name="headlight" count="1" />
+    <ingredient name="dcellBattery" count="2" />
+</recipe>
+
 <recipe name="brassFlashlightBarrel" count="1" scrapable="True" >
     <ingredient name="shortBrassPipe" count="1" />
     <ingredient name="scrapCable" count="1" />
@@ -2572,12 +2579,18 @@ tooltip?
 
 <!-- Elevator -->
 <recipe name="elevatorTest" count="1" scrapable="False" >
-<ingredient name="forgedIron" count="20"/>
-<ingredient name="smallEngine" count= "1"/>
-<ingredient name="scrapCable" count="10"/>
+	<ingredient name="forgedIron" count="20"/>
+	<ingredient name="smallEngine" count= "1"/>
+	<ingredient name="scrapCable" count="10"/>
 </recipe>
 <!-- End Elevator -->
 
+<!-- Salted Meat -->
+<recipe name="saltedMeat" count="1" >
+	<ingredient name="rottingFlesh" count="1"/>
+	<ingredient name="potassiumNitratePowder" count="2"/>
+</recipe>
+<!-- End Salted Meat -->
 	
 <!-- End Custom Recipes -->
 </recipes>

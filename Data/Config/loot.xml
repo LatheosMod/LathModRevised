@@ -662,6 +662,7 @@
 	<item name="bottledWater" prob=".5"/>
 	<item name="emptyJar" count="1,4"/>
 	<item name="ZiplockBag" count="1,3" />
+	<item name="dcellBattery" count="1" />
 </lootgroup>
 
 <lootgroup name="junk">
@@ -696,6 +697,7 @@
 	<item group="treasureMaps" count="1" prob="0.06"/>
 	<item name="femur" count="1,2" prob="0.05"/>
 	<item name="ZiplockBag" count="1,3" />
+	<item name="dcellBattery" count="1" />
 </lootgroup>
 
 <lootgroup name="rareAutomotive">
