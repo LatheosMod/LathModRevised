@@ -50,6 +50,9 @@ New Items
 	SylenThunder's Glass Light Blocks
 	Craftable metal pipes (straight, corner, joint, cap, valve, and flange)
 	Refined coal (crafted at the workbench from 25 coal, burning for 15 minutes)
+	Elevator
+	Salted Meat
+	D Cell Batteries
 
 New Armor
 	Helmet lights for cloth hat, cowboy hat, football helmet, iron helmet, military helmet, leather hood, scrap helmet. steel helmet, swat helmet
@@ -61,6 +64,7 @@ New Perks
 	Silent But Deadly
 	Rebreather
 	Masamune, Jr.
+	Paul Bunyan
 	
 Includes
 	Unofficial XML Fixes 3.14
