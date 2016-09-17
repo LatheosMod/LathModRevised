@@ -2569,6 +2569,15 @@ tooltip?
     <ingredient name="candyTin" count="1"/>
 </recipe>
 <!-- End Valmar's Expanded Traps -->
+
+<!-- Elevator -->
+<recipe name="elevatorTest" count="1" scrapable="False" >
+<ingredient name="forgedIron" count="20"/>
+<ingredient name="smallEngine" count= "1"/>
+<ingredient name="scrapCable" count="10"/>
+</recipe>
+<!-- End Elevator -->
+
 	
 <!-- End Custom Recipes -->
 </recipes>

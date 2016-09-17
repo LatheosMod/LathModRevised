@@ -11761,9 +11761,9 @@ kind of free
 </block>
 
 <block id="1587" name="elevatorTest">
-    	<property name="IsDeveloper" value="true" />
+    <!-- <property name="IsDeveloper" value="true" /> -->
 	<property name="Class" value="DoorSecure" />
-	<property name="Material" value="wood" />
+	<property name="Material" value="metal" />
 	<property name="Shape" value="ModelEntity" />
 	<property name="Texture" value="241" />
 	<property name="Model" value="Entities/Elevators/elevator_testPrefab" />
@@ -11775,6 +11775,7 @@ kind of free
 	<property name="OpenSound" value="UseActions/open_door_wood" />
 	<property name="CloseSound" value="UseActions/close_door_wood" />
 	<drop event="Destroy" count="0" />
+	<property name="DescriptionKey" value="elevatorTestDesc"/>
 	<property name="Group" value="Building" />
 </block>
 

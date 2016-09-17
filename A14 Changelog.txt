@@ -200,7 +200,8 @@ Added new challenge quest (A Shitty Way to Die) which uses the poop launcher to 
 TO DO:
 Change icons for lighted helmets to indicate change to brass flashlight
 
------>12 Sep 2016<-----
+----->16 Sep 2016<-----
 LathMod 3.54
 Includes Unofficial XML Fixes 3.14, Tritox's Origin UI HUD 1.0 (14.7 experimental), stallionsden's Backpack Expansion (75 slots), three08's Rebreather, Valmar's Expanded Traps
 Changed seed recipes (corn, potato, blueberry, goldenrod, cotton) to produce 3 seeds per item
+Added elevator block, recipe, and localization text
