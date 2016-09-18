@@ -7868,6 +7868,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
         <property name="BlockDamage" value="1,1" />
     </property>          
 	<property name="DescriptionKey" value="poopBoltDesc" />
+	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
 
 <!-- End Poop Launcher -->
@@ -7885,7 +7886,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property class="Attributes">
 		<property name="Accuracy" value=".7,0.01" />
 		<property name="DegradationMax" value="1500,5000" />
-	</property>          
+	</property>
+	<property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
  
 <item id="2030" name="partsrifleScope">
@@ -7910,6 +7913,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Weight" value="5" />
 	<property name="DescriptionKey" value="partsrifleScopeDesc"/>
 	<property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
 <!-- Remote currently unused
@@ -7958,18 +7962,20 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Weight" value="4" />
 	<property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="partsSuppressorDesc"/>
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
 <item id="2033" name="partssuppressedhuntingRifleBarrel">
 	<property name="Extends" value="partsMaster" />
 	<property name="DescriptionKey" value="partsSuppressionDesc"/>
 	<property name="CustomIcon" value="suppressedhuntingRifleBarrel" />
-    <property name="Group" value="Resources" />
     <property class="Attributes">
 		<property name="EntityDamage" value="30,75" />
 		<property name="BlockDamage" value="6,14" />
 		<property name="DegradationMax" value="1500,5000" />
     </property>
+    <property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
 <item id="2034" name="partssuppressedsniper_barrel">
@@ -7978,12 +7984,13 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     <property name="PartType" value="Barrel" />
 	<property name="CustomIcon" value="suppressedsniperRifleBarrel" />
     <property name="Weight" value="40" />
-    <property name="Group" value="Resources" />
     <property class="Attributes">
 		<property name="EntityDamage" value="27.6,69" />
 		<property name="BlockDamage" value="6,14" />
 		<property name="DegradationMax" value="1700,7000" />
     </property>
+    <property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
 <item id="2035" name="partssuppressedpistol_barrel">
@@ -7992,12 +7999,13 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     <property name="PartType" value="Barrel" />
 	<property name="CustomIcon" value="suppressedpistol_barrel" />
     <property name="Weight" value="10" />
-    <property name="Group" value="Resources" />
     <property class="Attributes">
 		<property name="EntityDamage" value="7.6, 19" />
 		<property name="BlockDamage" value="5,13" />
 		<property name="DegradationMax" value="700,4000" />
     </property>
+    <property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
 <item id="2036" name="partssuppressedmp5_barrel">
@@ -8006,7 +8014,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     <property name="PartType" value="Barrel" />
 	<property name="CustomIcon" value="suppressedmp5_barrel" />
     <property name="Weight" value="25" />
-    <property name="Group" value="Resources" />
     <property class="Attributes">	
 		<property name="EntityDamage" value="11.6,29" />
 		<property name="BlockDamage" value="2,5" />
@@ -8016,6 +8023,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		-->
 		<property name="DegradationMax" value="2250,10000" />
     </property>
+    <property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
 <item id="2037" name="partssuppressedAK47Barrel">
@@ -8024,12 +8033,13 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DescriptionKey" value="partsSuppressionDesc"/>
     <property name="PartType" value="Barrel" />
     <property name="Weight" value="35" />
-    <property name="Group" value="Resources" />
     <property class="Attributes">	
 		<property name="EntityDamage" value="28,70" />
 		<property name="BlockDamage" value="4,9.5" />
 		<property name="DegradationMax" value="2250,10000" />
     </property>
+    <property name="Group" value="Resources" />
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
 <!-- End Custom Parts -->
@@ -8509,19 +8519,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DescriptionKey" value="steelChestArmorSchematicDesc" />
 </item> 
 
-<!-- Silence Is Golden disabled due to new perk, Silent But Deadly -->
-<!--
-<item id="2050" name="SilenceIsGolden">
-	<property name="CustomIcon" value="SilenceIsGolden"/>
-	<property name="Extends" value="schematicMaster" />
-	<property class="Action1">
-		<property name="Recipes_to_learn" value="Suppressor, suppressedPistol, suppressedHuntingRifle, QscopedHuntingRifle, suppressedSMG, suppressedAK47, suppressedSniperRifle, suppressedhuntingRifleBarrel, suppressedpistol_barrel, suppressedmp5_barrel, suppressedAK47Barrel, suppressedsniper_barrel"/>
-		<property name="Skills_to_gain" value="Gun Smithing" />
-	</property>
-	<property name="DescriptionKey" value="SilenceIsGoldenDesc"/>
-</item>
--->
-	
 <!-- End Books and Schematics -->
 	
 <!-- Begin SeagraveFireaxe --> <!-- Slower with higher stamina cost, this tool works as both axe and pick to save inventory space -->
@@ -8663,6 +8660,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property name="DescriptionKey" value="gunPoopCannonDesc" />
 	<property name="Group" value="Ammo/Weapons" />
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
 <item id="2056" name="FertilizerRound">
@@ -8696,6 +8694,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>	
     <property name="Group" value="Ammo/Weapons" />
 	<property name="DescriptionKey" value="FertilizerRoundDesc" />
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
 <item id="2057" name="partsPoopCannonBarrel">
@@ -8715,6 +8714,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     </property>
     <property name="Group" value="Resources,Ammo/Weapons" />
 	<property name="DescriptionKey" value="PoopCannonPartsGroupDesc"/>
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
 <item id="2058" name="partsPoopCannonStock">
@@ -8731,6 +8731,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     </property>
     <property name="Group" value="Resources,Ammo/Weapons" />
 	<property name="DescriptionKey" value="PoopCannonPartsGroupDesc"/>
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 	
 <item id="2059" name="partsPoopCannonReceiver">
@@ -8747,6 +8748,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     </property>
     <property name="Group" value="Resources,Ammo/Weapons" />
 	<property name="DescriptionKey" value="PoopCannonPartsGroupDesc"/>
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>	
 	
 <item id="2060" name="partsPoopCannonParts">
@@ -8760,6 +8762,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     <property name="Weight" value="10" />
     <property name="Group" value="Resources,Ammo/Weapons" />
 	<property name="DescriptionKey" value="PoopCannonPartsGroupDesc"/>
+	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>		
 	
 <!-- End Poop Cannon -->
@@ -8859,6 +8862,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="HoldType" value="16" />
 	<property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="brassFlashlightBarrelDesc" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </item>
 
 <item id="2065" name="brassFlashlightCap">
@@ -8870,6 +8874,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="HoldType" value="16" />
 	<property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="brassFlashlightCapDesc" />
+	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
 </item>
 
 <item id="2066" name="potatoBattery">
@@ -8880,6 +8885,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="HoldType" value="3" />
 	<property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="potatoBatteryDesc" />
+	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 <!-- End Brass Flashlight -->
 
@@ -8993,6 +8999,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DropScale" value="8" />
 	<property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="refinedCoalDesc" />
+	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 <!-- End Refined Coal -->
 
