@@ -2185,7 +2185,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Meshfile" value="Items/Crafting/rock_smallPrefab" />
 	<property name="Material" value="stone" />
 	<property name="HoldType" value="40" />
-	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+	<property name="Stacknumber" value="2000" /> <!-- STK resource -->
 	<property name="RepairAmount" value="300" />
 	<property name="Weight" value="5" />
 	<property class="Action0"> <!-- AttackAction -->
