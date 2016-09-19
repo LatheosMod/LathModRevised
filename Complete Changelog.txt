@@ -413,3 +413,10 @@ Added D Cell Battery as random cupboard/junk loot, used as alternative to potato
 Added Carpentry Tools skill, used with axes (instead of mining tools)
 Added Paul Bunyan perk for improving axe usage
 Added new food item, saltedMeat, crafted from rottingFlesh and potassiumNitrate; has no smell, doesn't cause food poisoning, but dehydrates and does not heal
+
+----->19 Sep 2016<-----
+LathMod 3.61
+Includes Unofficial XML Fixes 3.14, Tritox's Origin UI HUD 1.0 (14.7 experimental), stallionsden's Backpack Expansion (75 slots), three08's Rebreather, Valmar's Expanded Traps
+Fixed missing repair item on elevator
+Increased stack size of rockSmall to 2000 to bring it in line with other harvested materials
+Added skill William Tell, which increases archery damage and chance of dismemberment
