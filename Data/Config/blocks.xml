@@ -11775,6 +11775,9 @@ kind of free
 	<property name="OpenSound" value="UseActions/open_door_wood" />
 	<property name="CloseSound" value="UseActions/close_door_wood" />
 	<drop event="Destroy" count="0" />
+	<property class="RepairItems">
+		<property name="forgedIron" value="5" />
+	</property>
 	<property name="DescriptionKey" value="elevatorTestDesc"/>
 	<property name="Group" value="Building" />
 </block>
