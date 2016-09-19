@@ -1,5 +1,5 @@
 # LathModRevised
-3.6 Update
+3.61 Update
 
 This mod adds suppressed firearms (including the AK47), steel armor, iron bows and crossbows, a modular repeating crossbow, and a few other bits and bobs. Currently the drawbridges and garage doors are disabled, as I'm not satisfied with their functionality and want to see if I can make them work better before putting them back in.
 
