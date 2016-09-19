@@ -12457,6 +12457,9 @@ kind of free
 	<property name="ParticleOffset" value="0.5,0.5,0.5" />
 	<drop event="Destroy" name="brokenGlass" count="1,4" />
 	<property name="DescriptionKey" value="TorchGlassDesc" />
+	<property class="RepairItems">
+		<property name="glassCTRSheet" value="3" />
+	</property>
 	<property name="Group" value="Building" />
 </block>
 
@@ -12474,6 +12477,9 @@ kind of free
 	<property name="ParticleOffset" value="0.5,0.75,0.5" />
 	<drop event="Destroy" name="brokenGlass" count="1,4" />
 	<property name="DescriptionKey" value="CandleGlassDesc" />
+	<property class="RepairItems">
+		<property name="glassCTRSheet" value="3" />
+	</property>
 	<property name="Group" value="Building" />
 </block>
 
@@ -12491,6 +12497,9 @@ kind of free
 	<property name="ParticleOffset" value="0.5,0.15,0.5" />
 	<drop event="Destroy" name="brokenGlass" count="1,4" />
 	<property name="DescriptionKey" value="FireGlassDesc" />
+	<property class="RepairItems">
+		<property name="glassCTRSheet" value="3" />
+	</property>
 	<property name="Group" value="Building" />
 </block> 
 	
@@ -12509,6 +12518,9 @@ kind of free
 	<property name="DowngradeBlock" value="trapFireEmpty" />
 	<drop event="Destroy" count="0" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance="1" />
+	<property class="RepairItems">
+		<property name="forgedIron" value="5" />
+	</property>
 	<property name="Group" value="Tools/Traps" />
 </block>
 	
@@ -12538,6 +12550,9 @@ kind of free
 	<property name="Shape" value="Plate" />
 	<property name="Texture" value="217" />
 	<drop event="Destroy" count="0" />
+	<property class="RepairItems">
+		<property name="wood" value="5" />
+	</property>
 	<property name="Group" value="Tools/Traps" />
 	<drop event="Fall" count="0"/>
 </block>
@@ -12549,6 +12564,9 @@ kind of free
 	<property name="Material" value="MbarbedFence" />
 	<property name="Texture" value="245" />
 	<property name="MaxDamage" value="200" />
+	<property class="RepairItems">
+		<property name="wood" value="5" />
+	</property>
 	<property name="Group" value="Tools/Traps" />
 </block>
 	
