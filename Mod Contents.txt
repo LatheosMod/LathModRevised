@@ -34,37 +34,46 @@ New Parts
 	Poop Cannon Parts
 	
 New Items
-	Craftable weapon oil from Biofuel
+	Craftable Weapon Oil from Biofuel
 	Craftable Scrap Cable
-	Craftable calipers in the forge
-	Crafable beaker in the forge
-	Remote (for operating the drawbridges and garage doors, which are currently disabled as of LathMod 3.1)(Currently disabled as of LathMod 3.51)
+	Craftable Calipers in the forge
+	Craftable Beaker in the forge
 	Forged Brass
 	Short Brass Pipes
-	Valmar's Craftable Fuel Logs (Burns for 9 minutes)
 	Rebreather
 	Carbon Steel
 	Alternate bellows recipe using leather
 	Brass Flashlight (used with lighted helmets; the vanilla flashlight is used with weapons only)
 	Alternate arrow and crossbow bolt recipes
-	SylenThunder's Glass Light Blocks
-	Craftable metal pipes (straight, corner, joint, cap, valve, and flange)
 	Refined coal (crafted at the workbench from 25 coal, burning for 15 minutes)
-	Elevator
 	Salted Meat
-	D Cell Batteries
+	D Cell Battery
 
 New Armor
 	Helmet lights for cloth hat, cowboy hat, football helmet, iron helmet, military helmet, leather hood, scrap helmet. steel helmet, swat helmet
 	Cloth hood with light and no armor value (craftable at game start)
 	Complete Steel Armor set
-	Craftable leather duster
+	Craftable Leather Duster
+
+New Blocks
+    Valmar's Fuel Logs (Burns for 9 minutes)(Craftable at the workbench)
+    Elevator
+	Craftable Metal Pipes in the forge (straight, corner, joint, cap, valve, and flange)
+	Valmar's Expanded Traps (Fire, Fire Spike, Adhesive, Adhesive Spike, Miner's TNT, Nail Mine, Steel Spike)
+	Concrete Log Spikes
+	Safed Fire Trap
+	SylenThunder's Glass Light Blocks
 
 New Perks
-	Silent But Deadly
-	Rebreather
-	Masamune, Jr.
+    Silent But Deadly
+    Rebreather
+    Masamune, Jr. 
 	Paul Bunyan
+	Carpentry Tools
+	William Tell
+
+New Quest
+    A Shifty Way to Die - kill five zombies with the poop launcher
 	
 Includes
 	Unofficial XML Fixes 3.14
