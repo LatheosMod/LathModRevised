@@ -221,3 +221,9 @@ Includes Unofficial XML Fixes 3.14, Tritox's Origin UI HUD 1.0 (14.7 experimenta
 Fixed missing repair item on elevator
 Increased stack size of rockSmall to 2000 to bring it in line with other harvested materials
 Added skill William Tell, which increases archery damage and chance of dismemberment
+
+----->20 Sep 2016<-----
+LathMod 3.62
+Includes Unofficial XML Fixes 3.14, Tritox's Origin UI HUD 1.0 (14.7 experimental), stallionsden's Backpack Expansion (75 slots), three08's Rebreather, Valmar's Expanded Traps
+Added concrete spikes, fixed spike upgrade path - wood log spike-> reinforced wood-> wood & metal-> scrap iron-> reinforced scrap iron-> concrete-> reinforced concrete-> steel-> steel firespike
+Added trapFireSafed, an upgrade to the fire trap that allows for safe travel across it
