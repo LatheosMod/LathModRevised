@@ -10486,7 +10486,7 @@ kind of free
 	<!--property name="IsTerrainDecoration" value="true" DOES NOT WORK ON THIS SHAPE!!! -->
 	<property name="BuffsWhenWalkedOn" value="bleeding"/>
 	<property class="UpgradeBlock">
-		<property name="ToBlock" value="trapConcreteLogSpike" />
+		<property name="ToBlock" value="trapSteelSpike" />
 		<property name="Item" value="concreteMix" />
 		<property name="ItemCount" value="10" />
 		<property name="UpgradeHitCount" value="4" />
@@ -12623,7 +12623,7 @@ kind of free
 	<property class="RepairItems">
 		<property name="forgedSteel" value="5" />
 	</property>
-	<property name="DowngradeBlock" value="trapReinforcedConcreteLogSpike" />
+	<property name="DowngradeBlock" value="rScrapIronLogSpike5" />
 	<drop event="Fall" name="scrapIron" count="1" prob="1.0"  stick_chance=".75" />
 	<property name="Group" value="Tools/Traps" />
 </block>
@@ -12686,51 +12686,6 @@ kind of free
 </block>
 <!-- End Valmar's Expanded Traps -->
 
-<!-- Concrete Spikes -->
-<block id="2013" name="trapConcreteLogSpike">
-	<property name="Class" value="Damage" />
-	<property name="Damage" value="9" />
-	<property name="Damage_received" value="12" />
-	<property name="Material" value="Mconcrete" />
-	<property name="Shape" value="Cone" />
-	<property name="Texture" value="8,8,8,8,8,8" />
-	<property name="BuffsWhenWalkedOn" value="bleeding"/>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="trapReinforcedConcreteLogSpike" />
-		<property name="Item" value="concreteMix" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="DowngradeBlock" value="rScrapIronLogSpike5" />
-	<property class="RepairItems">
-		<property name="concreteMix" value="10" />
-	</property>
-	<drop event="Destroy" name="rockSmall" count="5" />
-	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
-</block>
-
-<block id="2014" name="trapReinforcedConcreteLogSpike">
-	<property name="Class" value="Damage" />
-	<property name="Damage" value="11" />
-	<property name="Damage_received" value="15" />
-	<property name="Material" value="MrConcrete" />
-	<property name="Shape" value="Cone" />
-	<property name="Texture" value="315" />
-	<property name="BuffsWhenWalkedOn" value="bleeding"/>
-	<property class="UpgradeBlock">
-		<property name="ToBlock" value="trapSteelSpike" />
-		<property name="Item" value="forgedSteel" />
-		<property name="ItemCount" value="10" />
-		<property name="UpgradeHitCount" value="4" />
-	</property>
-	<property name="DowngradeBlock" value="trapConcreteLogSpike" />
-	<property class="RepairItems">
-		<property name="concreteMix" value="10" />
-	</property>
-	<drop event="Destroy" name="rockSmall" count="5" />
-	<drop event="Fall" name="destroyedStone" count="1" prob=".75" stick_chance="1" />
-</block>
-<!-- End concrete spikes -->
 
 <!-- End Custom Blocks -->
 
