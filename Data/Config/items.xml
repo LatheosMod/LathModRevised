@@ -1658,6 +1658,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="RepairTools" value="wood" />
 	<property name="HoldType" value="26" />
  	<property name="FuelValue" value="70" />
+	<property name="DegradationBreaksAfter" value="false" />
+	<property name="CrosshairOnAim" value="true" />
+	<property name="CrosshairUpAfterShot" value="false" />
  	<property name="SoundDestroy" value="wooddestroy1" />
 	<property class="Action0"> <!-- AttackAction -->
 		<property name="Class" value="Launcher" />
@@ -4118,8 +4121,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Waterproof" value="0.1"/>
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
-	<property name="Material" value="leather" />
-	<property name="RepairTools" value="leather" />
+	<property name="Material" value="cloth" />
+	<property name="RepairTools" value="cloth" />
 	<property name="HoldType" value="45" />
  	<property name="DegradationBreaksAfter" value="false" />
 	<property name="EquipSlot" value="Feet" />
@@ -6327,7 +6330,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="metal" />
 	<property name="HoldType" value="45" />
-	<property name="Stacknumber" value="1500" /> <!-- STK resource -->
+	<property name="Stacknumber" value="2000" /> <!-- STK resource -->
 	<property name="Weight" value="5" />
 	<property name="Group" value="Resources" />
 	<property name="RepairTime" value="0.5" />
@@ -6430,7 +6433,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Material" value="clay" />
 	<property name="Weight" value="5" />
 	<property name="HoldType" value="21" />
-	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+	<property name="Stacknumber" value="2000" /> <!-- STK resource -->
 	<property name="Group" value="Resources" />
 	<property name="CraftingIngredientTime" value="0.5" />
 </item>
@@ -6544,7 +6547,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="Material" value="coal" />
 	<property name="HoldType" value="45" />
-	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+	<property name="Stacknumber" value="2000" /> <!-- STK resource -->
 	<property name="FuelValue" value="20" />
 	<property name="DropScale" value="8" />
 	<property name="Group" value="Resources" />
@@ -6555,7 +6558,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Meshfile" value="Items/Food/cornmealPrefab" />
 	<property name="Material" value="metal" />
 	<property name="HoldType" value="21" />
-	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+	<property name="Stacknumber" value="2000" /> <!-- STK resource -->
 	<property name="Group" value="Resources" />
 	<property name="CraftingIngredientTime" value="2" />
 </item>
@@ -6564,7 +6567,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Meshfile" value="Items/Crafting/gun_powderPrefab" />
 	<property name="Material" value="dirt" />
 	<property name="HoldType" value="21" />
-	<property name="Stacknumber" value="500" /> <!-- STK resource -->
+	<property name="Stacknumber" value="750" /> <!-- STK resource -->
 	<property name="Group" value="Resources,Ammo/Weapons,Tools/Traps" />
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
@@ -7239,7 +7242,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 <!-- Custom Items - Custom Item ids start at 2000 -->
 	
 <!-- Iron Bows -->
-	
 <item id="2000" name="IronBow">
 	<property name="CustomIcon" value="ironBow" />
     <property name="Meshfile" value="Items/Weapons/Ranged/Bows/WoodenBow/WoodenBowPrefab" />
@@ -7328,11 +7330,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="ActionSkillGroup" value="Archery"/>
 	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
-	
 <!-- End Iron Bows -->
 	
 <!-- Begin Brass Crafting -->
-	
 <item id="2002" name="forgedBrass">
 	<property name="CustomIcon" value="forgedBrass" />
 	<property name="Meshfile" value="Items/Crafting/ingotBrass" />
@@ -7355,11 +7355,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="shortBrassPipeDesc" />
 </item>
-	
 <!-- End Brass Craftng -->
 
 <!-- Brass Mallet -->
-	
 <item id="2004" name="BrassMallet">
 	<property name="CustomIcon" value="brassMallet" />
 	<property name="Meshfile" value="Items/Tools/hammerPrefab" />
@@ -7404,11 +7402,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="ActionSkillGroup" value="Construction Tools"/>
 	<property name="CraftingSkillGroup" value="Tool Smithing"/>
 </item>
-
 <!-- End Brass Mallet -->	
 
 <!-- Steel Armor -->
-
 <item id="2005" name="steelBoots"> <!-- armorMasterSteelArmor -->
 	<property name="CustomIcon" value="steelBoots" />
 	<property name="Insulation" value="-5"/>
@@ -7509,11 +7505,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="UISlot" value="Gloves" />
 	</property>
 </item>
-		
 <!-- End Steel Armor -->
 
 <!-- Lighted Helmets -->
-	
 <item id="2010" name="Cloth Hat (Light)">
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
@@ -7643,11 +7637,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="ActionSkillGroup" value="Clothing"/>
 	<property name="CraftingSkillGroup" value="Tailoring"/>
 </item>
-
 <!-- End Lighted Helmets -->
 	
 <!-- Repeating Crossbow -->
-	
 <item id="2020" name="repeatingCrossbow">
 	<property name="CustomIcon" value="repeatingCrossbow" />
     <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
@@ -7656,6 +7648,8 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="HoldType" value="26" />
 	<property name="FuelValue" value="80" />
     <property name="DegradationBreaksAfter" value="false" />
+	<property name="CrosshairOnAim" value="true" />
+	<property name="CrosshairUpAfterShot" value="false" />
 	<property class="Parts">
 		<property name="Stock" value="partscrossbowStock" />
 		<property name="Receiver" value="partscrossbowLimb" />
@@ -7794,11 +7788,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     <property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="SandpaperDesc"/>
 </item>           
-	
 <!-- End Repeating Crossbow -->
 	
 <!-- Poop Launcher -->
-	
 <item id="2027" name="poopLauncher">
 	<property name="CustomIcon" value="pooLauncher" />
     <property name="Meshfile" value="Items/Weapons/Ranged/Bows/Crossbow/crossbowPrefab" />
@@ -7870,11 +7862,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DescriptionKey" value="poopBoltDesc" />
 	<property name="CraftingSkillGroup" value="Weapon Smithing"/>
 </item>
-
 <!-- End Poop Launcher -->
 	
 <!-- Custom Parts -->
-	
 <item id="2029" name="partsscopedHuntingRifleParts">
 	<property name="Extends" value="partsMaster" />
 	<property name="DescriptionKey" value="partsscopedHuntingRiflePartsDesc"/>
@@ -7916,7 +7906,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
 
-<!-- Remote currently unused
 <item id="2031" name="Remote">
 	<property name="CustomIcon" value="Remote"/>
 	<property name="Meshfile" value="Items/Misc/car_battery" />
@@ -7932,7 +7921,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     <property class="Action0">
         <property name="Class" value="Melee" />
         <property name="Delay" value="0.8" />
-        <property name="Range" value="2.2" />
+        <property name="Range" value="8" />
         <property name="Sphere" value="0.1" />
         <property name="DamageEntity" value="10" />
         <property name="DamageBlock" value="0.2" />
@@ -7943,16 +7932,16 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     <property class="Action1"> 
         <property name="Class" value="Repair" />
         <property name="Delay" value="0.4" />
+		<property name="Block_range" value="8" />
         <property name="Repair_amount" value="2" />
         <property name="Upgrade_hit_offset" value="-2" />
         <property name="Sound_start" value="UseActions/repair_block" />
         <property name="Allowed_upgrade_items" value="Remote" />
-        <property name="Restricted_upgrade_items" value="concreteMix" />
+        <property name="Restricted_upgrade_items" value="concreteMix,wood,scrapIron,forgedIron,forgedSteel" />
     </property>
 	<property name="DescriptionKey" value="RemoteDesc"/>
 	<property name="Group" value="Tools/Traps" />
 </item> 
--->
 	
 <item id="2032" name="partsSuppressor">
 	<property name="CustomIcon" value="Suppressor" />
@@ -8041,11 +8030,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     <property name="Group" value="Resources" />
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
-	
 <!-- End Custom Parts -->
 	
 <!-- Scoped Hunting Rifle -->
-	
 <item id="2038" name="gunscopedHuntingRifle">
 	<property name="CustomIcon" value="scopedHuntingRifle" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab" />
@@ -8103,11 +8090,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="ActionSkillGroup" value="Rifles"/>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>
-
 <!-- End Scoped Hunting Rifle -->
 
 <!-- Suppressed Firearms -->
-	
 <item id="2039" name="gunsuppressedHuntingRifle">
 	<property name="CustomIcon" value="suppressedHuntingRifle" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/HuntingRifle/HuntingRiflePrefab" />
@@ -8461,11 +8446,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="ActionSkillGroup" value="Rifles"/>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>	
-	
 <!-- End Suppressed Firearms -->
 
 <!-- Books and Schematics -->
-
 <item id="2045" name="steelBracersSchematic">
 	<property name="CustomIcon" value="steelBracersSchematic" />
 	<property name="Extends" value="schematicMaster" />
@@ -8518,11 +8501,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property name="DescriptionKey" value="steelChestArmorSchematicDesc" />
 </item> 
-
 <!-- End Books and Schematics -->
 	
 <!-- Begin SeagraveFireaxe --> <!-- Slower with higher stamina cost, this tool works as both axe and pick to save inventory space -->
-	
 <item id="2051" name="SeagraveFireaxe">
 	<property name="CustomIcon" value="SeagraveFireaxe" />
 	<property name="Meshfile" value="Items/Weapons/Melee/Axe/fireaxePrefab" />
@@ -8576,11 +8557,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
     </property>
 	<property name="DescriptionKey" value="SeagraveFireaxeSchematicDesc"/>
 </item>
-
 <!-- End SeagraveFireaxe -->
 	
 <!-- Bagged Meat -->
-	
 <item id="2053" name="BaggedMeat">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="CustomIcon" value="BaggedMeat" />
@@ -8614,11 +8593,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="CraftingIngredientTime" value="1" />
 	<property name="DescriptionKey" value="ZiplockBagDesc" />
 </item>
-
 <!-- End Bagged Meat -->
 
 <!-- Poop Cannon -->
-	
 <item id="2055" name="gunPoopCannon">
 	<property name="CustomIcon" value="PoopCannon" />
 	<property name="Meshfile" value="Items/Weapons/Ranged/RocketLauncher/rocketlauncherPrefab" />
@@ -8764,11 +8741,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="DescriptionKey" value="PoopCannonPartsGroupDesc"/>
 	<property name="CraftingSkillGroup" value="Gun Smithing"/>
 </item>		
-	
 <!-- End Poop Cannon -->
 	
 <!-- Leather Duster Schematic-->
-	
 <item id="2061" name="leatherDusterSchematic">
 	<property name="DescriptionKey" value="leatherDusterSchematicDesc" />
 	<property name="CustomIcon" value="leatherDusterSchematic" />
@@ -8779,7 +8754,6 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 		<property name="Skills_to_gain" value="Leatherworking" />
     </property>
 </item>
-
 <!-- End Leather Duster Schematic -->
 
 <!-- Rebreather -->
@@ -8816,9 +8790,9 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property name="DescriptionKey" value="A Rebreather allows you to breathe underwater. It must be activated above water. Resurfacing deactivates the rebreather."/>
 	<property name="CraftingSkillGroup" value="Science"/>
+	<property name="ActionSkillGroup" value="Athletics"/>
 	<property name="Group" value="Resources" />
 	</item>
-	
 <!-- End Rebreather -->
 
 <!-- Brass Flashlight -->
@@ -8850,7 +8824,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	</property>
 	<property name="Group" value="Tools/Traps" />
 	<property name="DescriptionKey" value="brassFlashlightDesc" />
-	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
 <item id="2064" name="brassFlashlightBarrel">
@@ -8862,7 +8836,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="HoldType" value="16" />
 	<property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="brassFlashlightBarrelDesc" />
-	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
 <item id="2065" name="brassFlashlightCap">
@@ -8874,7 +8848,7 @@ Item ID ranges:       Master items (if applicable) are listed at the start of th
 	<property name="HoldType" value="16" />
 	<property name="Group" value="Resources" />
 	<property name="DescriptionKey" value="brassFlashlightCapDesc" />
-	<property name="CraftingSkillGroup" value="Miscellaneous Crafting"/>
+	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
 <item id="2066" name="potatoBattery">

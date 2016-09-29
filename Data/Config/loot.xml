@@ -276,6 +276,7 @@
 	<item name="qc_stagparty" count="1"/>
 	<item name="qc_dontfeedthebears" count="1"/>
 	<item name="qc_buythefarm" count="1"/>
+	<item name="qc_shittywaytodie" count="1"/>
 </lootgroup>
 
 <lootgroup name="treasureMaps" count="1">
@@ -293,7 +294,7 @@
 	<item name="9mmBullet" count="1,20"/>
 	<item name="10mmBullet" count="1,20"/>
 	<item name="762mmBullet" count="1,20"/>
-	<item name="44MagBullet" count="1,12" prob="0.1"/>
+	<item name="44MagBullet" count="1,12" prob="0.2"/>
 	<item name="steelArrow" count="1,12"/>
 	<item name="steelCrossbowBolt" count="1,12"/>
 </lootgroup>
@@ -662,7 +663,7 @@
 	<item name="bottledWater" prob=".5"/>
 	<item name="emptyJar" count="1,4"/>
 	<item name="ZiplockBag" count="1,3" />
-	<item name="dcellBattery" count="1" />
+	<item name="dcellBattery" count="1" prob="0.3" />
 </lootgroup>
 
 <lootgroup name="junk">
@@ -809,6 +810,7 @@
 <lootgroup name="metalpipe" count="all">
 	<item name="shortMetalPipe"/>
 	<item group="metalpipe_scrap"/>
+	<item name="shortBrassPipe" prob=".5"/>
 </lootgroup>
 
 <lootgroup name="rareTools" count="1">
@@ -840,7 +842,7 @@
 	<item name="wrench"/>
 	<item name="repairKit" count="1,4"/>
 	<item group="rareTools"/>
-	<item name="forgedIron" count="1,2" prob=".21"/>
+	<item name="forgedIron" count="1,2" prob=".25"/>
 	<item name="forgedSteel" count="1,2" prob=".12"/>
 </lootgroup>
 
@@ -862,9 +864,9 @@
 	<item name="toolAndDieSet" prob="0.5"/>
 	<item group="rareTools"/>
 	<item group="automotive" prob="2"/>
-	<item name="forgedIron" count="1,2" prob="0.21"/> <!-- together 2% per crate -->
+	<item name="forgedIron" count="1,2" prob="0.25"/> <!-- together 2% per crate -->
 	<item name="forgedSteel" count="1,2" prob="0.12"/>
-	<item name="Rebreather" count="2" prob="0.004" />
+	<item name="Rebreather" count="2" prob="0.12" />
 </lootgroup>
 
 <lootgroup name="rareMedicine" count="1">

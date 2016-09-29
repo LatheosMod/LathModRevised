@@ -77,7 +77,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="fertile_level" value="1" />
 	<property name="stability_glue" value="0" />
 	<property name="Mass" type="int" value="1" />
-	<property name="StabilitySupport" value="false" />
+	<property name="StabilitySupport" value="true" />
 	<property name="movement_factor" value="0.5" />
 	<property name="MaxDamage" value="50" />
 </material>
@@ -643,7 +643,7 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="damage_category" value="earth" />
 	<property name="surface_category" value="earth" />
 	<property name="particle_category" value="snow" />
-	<property name="particle_destroy_category=" value="snow" />
+	<property name="particle_destroy_category" value="snow" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="snow" />
 	<property name="stability_glue" value="9" />
@@ -706,9 +706,9 @@ Do not rename "basic" materials like cloth, metal, or stone. These auto-generate
 	<property name="forge_category" value="brass" />
 	<property name="Hardness" type="float" value="1" />
 	<property name="stepsound" value="metal" />
-	<property name="stability_glue" value="320" />
-	<property name="Mass" type="int" value="20" />
-	<property name="MaxDamage" value="200" />
+	<property name="stability_glue" value="0" />
+	<property name="Mass" type="int" value="1" />
+	<property name="MaxDamage" value="100" />
 </material>
 
 <material id="MdroppedBackpack">

@@ -431,3 +431,24 @@ Added trapFireSafed, an upgrade to the fire trap that allows for safe travel acr
 LathMod 3.63
 Includes Unofficial XML Fixes 3.14, Tritox's Origin UI HUD 1.0 (14.7 experimental), stallionsden's Backpack Expansion (75 slots), three08's Rebreather, Valmar's Expanded Traps
 Removed concrete log spikes - didn't feel quite right
+
+----->28 Sep 2016<-----
+LathMod 3.7
+Includes Unofficial XML Fixes 3.15, Tritox's Origin UI HUD 1.0 (14.7 experimental), stallionsden's Backpack Expansion (75 slots), three08's Rebreather, Valmar's Expanded Traps
+Added Shifty Way to Die quest into the proper loot list; I'd wondered why it wasn't popping...
+Increased loot probability for .44 rounds from 0.1 to 0.2
+Changed d cell battery to appear with 0.3 probability
+Increased probability for forged iron from 0.21 to 0.25 in tools & Working Stiffs containers
+Increased probability for rebreathers from .004 to 0.12, same as forged steel, in Working Stiffs containers
+Added shortBrassPipe to the metal pipes lootgroup
+Increased stack size for scrap iron to 2000, in line with other resources
+Increased stack size for clay lump to 2000, in line with other resources
+Increased stack size for coal to 2000, in line with other resources
+Increased stack size for potassium nitrate powder to 2000, in line with other resources
+Increased stack size for gunpowder to 750
+Changed brass flashlight barrel to use science skill in crafting
+Changed brass flashlight cap to use science skill in crafting
+Changed brass flashlight to use science skill in crafting
+Added ActionSkillGroup=athletics to the rebreather
+Added DegradationBreaksAfter=false and crosshaironaim to the crossbow
+Added two drawbridges - short, which extends two blocks out from a center block, and long, which extends three blocks from the center. Both can be crafted at the workbench

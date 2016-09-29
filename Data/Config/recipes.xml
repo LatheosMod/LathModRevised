@@ -1289,9 +1289,11 @@ tooltip?
 <recipe name="leatherBoots" count="1" scrapable="False">
 	<ingredient name="leather" count="5"/>
 </recipe>
+
 <recipe name="leatherDuster" count="1" scrapable="False">
 	<ingredient name="leather" count="20"/>
 </recipe>
+
 
 <recipe name="leatherGloves" count="1" scrapable="False">
 	<ingredient name="leather" count="5"/>
@@ -2034,14 +2036,6 @@ tooltip?
 	<ingredient name="unit_brass" count="5"/>
 </recipe>
 
-<!-- Remote currently unused
-<recipe name="Remote" count="1" craft_area="forge" scrapable="False" >
-    <ingredient name="unit_glass" count="1" />
-    <ingredient name="scrapBrass" count="2" />
-    <ingredient name="wood" count="1" />
-</recipe>
--->
-
 <recipe name="brassFlashlight" count="1" scrapable="True" >
     <ingredient name="brassFlashlightBarrel" count="1" />
     <ingredient name="brassFlashlightCap" count="1" />
@@ -2591,6 +2585,34 @@ tooltip?
 	<ingredient name="potassiumNitratePowder" count="2"/>
 </recipe>
 <!-- End Salted Meat -->
+
+<!-- Remote -->
+<recipe name="Remote" count="1" craft_area="workbench" scrapable="False" >
+    <ingredient name="ductTape" count="4" />
+	<ingredient name="forgedBrass" count="2" />
+    <ingredient name="wood" count="1" />
+</recipe>
+<!-- End Remote -->
+
+<!-- Short Drawbridge -->
+<recipe name="shortBridge" count="1" craft_area="workbench" scrapable="False" >
+    <ingredient name="concreteMix" count="10" />
+    <ingredient name="forgedIron" count="10" />
+	<ingredient name="smallEngine" count="1"/>
+    <ingredient name="ductTape" count="5" />
+    <ingredient name="scrapCable" count="6" />
+</recipe>
+<!-- End Short Drawbridge -->
+		
+<!-- Long Drawbridge -->
+<recipe name="longBridge" count="1" craft_area="workbench" scrapable="False" >
+    <ingredient name="wood" count="10" />
+    <ingredient name="forgedIron" count="20" />
+	<ingredient name="smallEngine" count="1"/>
+    <ingredient name="ductTape" count="5" />
+    <ingredient name="scrapCable" count="6" />
+</recipe>
+<!-- End Long Drawbridge -->
 	
 <!-- End Custom Recipes -->
 </recipes>

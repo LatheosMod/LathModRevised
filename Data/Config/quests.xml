@@ -220,7 +220,7 @@
 		repeatable="true" category_key="challenge" offer_key="challenge_imalumberjackandimokay_offer" difficulty="hard">
 		
 		<objective type="Time" value="900" optional="true" />
-		<objective type="ZombieKill" id="snowZombie" value="3" />
+		<objective type="ZombieKill" id="snowzombie" value="3" />
 		
 		<requirement type="Group" id="requirementGroupFireaxe" value="OR">
 			<requirement type="Holding" id="fireaxeIron" />
