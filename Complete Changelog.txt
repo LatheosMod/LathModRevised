@@ -452,3 +452,12 @@ Changed brass flashlight to use science skill in crafting
 Added ActionSkillGroup=athletics to the rebreather
 Added DegradationBreaksAfter=false and crosshaironaim to the crossbow
 Added two drawbridges - short, which extends two blocks out from a center block, and long, which extends three blocks from the center. Both can be crafted at the workbench
+
+----->29 Sep 2016<-----
+LathMod 3.71
+Includes Unofficial XML Fixes 3.15, Tritox's Origin UI HUD 1.0 (14.7 experimental), stallionsden's Backpack Expansion (75 slots), three08's Rebreather, Valmar's Expanded Traps
+Reduced brass mallet block damage from 15,90 to 15,35 to reflect being weaker than the claw hammer
+Adjusted William Tell perk decapitation levels, 0.1 for levels 1&2, 0.2 for levels 3&4, and 0.4 for level 5
+Changed Advanced Tooling to require skill level 30 instead of 20
+Changed Concrete to require skill level 40 instead of 20
+Changed Steel to require skill level 50 instead of 40

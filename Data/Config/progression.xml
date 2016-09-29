@@ -225,13 +225,13 @@
 		</effect>
 	</action_skill>
 	<perk name="Concrete Mixing" icon="resource" description_key="concreteMixingDesc" title_key="concreteMixing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
-		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="20"/>
+		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="40"/>
 		<recipe name="cement" unlock_level="1"/>
 		<recipe name="concreteMix" unlock_level="1"/>
 		<recipe name="cementMixer" unlock_level="1"/>
 	</perk>
 	<perk name="Steel Smithing" icon="resource" description_key="steelSmithingDesc" title_key="steelSmithing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
-		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="40"/>
+		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="50"/>
 		<recipe name="forgedSteel" unlock_level="1"/>
 		<recipe name="steelArrowHead" unlock_level="1"/>
 	</perk>
@@ -1066,7 +1066,7 @@
 	</perk>
 	
 	<perk name="Advanced Tooling" icon="resource" description_key="AdvancedToolingSkillDesc" title_key="AdvancedTooling" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
-		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="20"/>
+		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="30"/>
 		<recipe name="workbench" unlock_level="1"/>
 		<recipe name="forge" unlock_level="1"/>
 		<recipe name="calipers" unlock_level="1"/>
@@ -1128,10 +1128,10 @@
 		</effect>
 		<effect name="DismembermentChance">
 			<add skill_level="1" value="0.1"/>
-			<add skill_level="2" value="0.2"/>
-			<add skill_level="3" value="0.3"/>
-			<add skill_level="4" value="0.4"/>
-			<add skill_level="5" value="0.5"/>
+			<add skill_level="2" value="0.1"/>
+			<add skill_level="3" value="0.2"/>
+			<add skill_level="4" value="0.2"/>
+			<add skill_level="5" value="0.4"/>
 		</effect>
 	</perk>
 <!-- End William Tell -->	
