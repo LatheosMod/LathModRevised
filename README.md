@@ -1,7 +1,8 @@
 # LathModRevised
-3.62 Update
+Alpha 15 compatible
+4.0 Update
 
-This mod adds suppressed firearms (including the AK47), steel armor, iron bows and crossbows, a modular repeating crossbow, and a few other bits and bobs. 
+This mod adds suppressed firearms (including the AK47), iron bows and crossbows, a modular repeating crossbow, and a few other bits and bobs. 
 
 EAC MUST be disabled for this mod to run.
 
@@ -18,7 +19,6 @@ New Weapons and Tools:
 	Repeating Crossbow (crafted from crossbowStock, crossbowDeck, crossbowLimb, crossbowScope)
 	Iron Crossbow
 	Iron Bow
-	Brass Mallet
 	Poop Cannon
 	Poop Launcher
 	Kukri
@@ -48,22 +48,17 @@ New Items:
 	Craftable Scrap Cable
 	Craftable Calipers in the forge
 	Craftable Beaker in the forge
-	Forged Brass
-	Short Brass Pipes
-	Rebreather
 	Carbon Steel
-	Alternate bellows recipe using leather
 	Brass Flashlight (used with lighted helmets; the vanilla flashlight is used with weapons only)
 	Alternate arrow and crossbow bolt recipes
-	Refined coal (crafted at the workbench from 25 coal, burning for 15 minutes)
+	Refined coal (crafted at the chemistry workbench from 25 coal, burning for 15 minutes)
 	Salted Meat
 	D Cell Battery
 
 New Armor:
 
-	Helmet lights for cloth hat, cowboy hat, football helmet, iron helmet, military helmet, leather hood, scrap helmet. steel helmet, swat helmet
+	Helmet lights for cloth hat, cowboy hat, football helmet, iron helmet, military helmet, leather hood, scrap helmet. swat helmet
 	Cloth hood with light and no armor value (craftable at game start)
-	Complete Steel Armor set
 	Craftable Leather Duster
 
 New Blocks:
@@ -71,8 +66,7 @@ New Blocks:
 	Valmar's Fuel Logs (Burns for 9 minutes)(Craftable at the workbench)
 	Elevator
 	Craftable Metal Pipes in the forge (straight, corner, joint, cap, valve, and flange)
-	Valmar's Expanded Traps (Fire, Fire Spike, Adhesive, Adhesive Spike, Miner's TNT, Nail Mine, Steel Spike)
-	Concrete Log Spikes
+	Valmar's Expanded Traps (Fire, Adhesive, Nail Mine)
 	Safed Fire Trap
 	SylenThunder's Glass Light Blocks
 
@@ -80,7 +74,6 @@ New Blocks:
 New Perks:
 
 	Silent But Deadly
-	Rebreather 
 	Masamune, Jr. 
 	Paul Bunyan 
 	Carpentry Tools
@@ -92,10 +85,8 @@ New Quest
 	
 Includes
 
-	Unofficial XML Fixes 3.14
-	Tritox's Origin UI HUD 1.0	
 	stallionsden's Backpack Expansion
-	three08's Rebreather
+	Sirillion's SMX UI
 	Valmar's Expanded Traps
 
 
