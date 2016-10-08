@@ -3,11 +3,11 @@
 <progression>
 <player 
 	max_level="200" 
-	exp_to_level="4000" 
-	experience_multiplier="1.01" 
+	exp_to_level="8000" 
+	experience_multiplier="1.00905" 
 	skill_points_per_level="5" 
 	skill_point_multiplier="0"/>
-
+	<!-- that's 4000 XP for level 1 and 56k for level 199, total cumulative of 3.97MXP -->
 
 <skills 
 	max_level="100" 
@@ -19,6 +19,7 @@
 	<!-- Player Skills -->
 	<player_skill name="Athletics" icon="run" description_key="athleticsDesc" title_key="athletics" exp_to_level="500" group="health" >
 		<effect name="StaminaDegradation">
+			<!-- <multiply skill_level= and <multiply perk_level= are completely interchangeable. They parse as the same value. -->
 			<multiply skill_level="1,5" value="1,.95" />
 			<multiply skill_level="5,11" value=".95,.91" />
 			<multiply skill_level="11,19" value=".91,.87" />
@@ -47,6 +48,7 @@
 		<requirement perk_level="4" required_skill_name="Athletics" required_skill_level="80"/>
 		<requirement perk_level="5" required_skill_name="Athletics" required_skill_level="100"/>
 		<effect name="MinWellness">
+			<add perk_level="0" value="0"/>
 			<add perk_level="1" value="10"/>
 			<add perk_level="2" value="20"/>
 			<add perk_level="3" value="30"/>
@@ -54,6 +56,7 @@
 			<add perk_level="5" value="50"/>
 		</effect>
 		<effect name="MaxWellness"> 
+			<add perk_level="0" value="0"/>
 			<add perk_level="1" value="10"/>
 			<add perk_level="2" value="20"/>
 			<add perk_level="3" value="30"/>
@@ -68,6 +71,7 @@
 		<requirement perk_level="4" required_skill_name="Athletics" required_skill_level="80"/>
 		<requirement perk_level="5" required_skill_name="Athletics" required_skill_level="100"/>
 		<effect name="StaminaGain">
+			<add perk_level="0" value="0"/>
 			<add perk_level="1" value=".2"/>
 			<add perk_level="2" value=".4"/>
 			<add perk_level="3" value=".6"/>
@@ -103,6 +107,7 @@
 		<requirement perk_level="2" required_skill_name="Scavenging" required_skill_level="25"/>
 		<requirement perk_level="3" required_skill_name="Scavenging" required_skill_level="50"/>
 		<effect name="LootTime">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="0.75"/>
 			<multiply skill_level="2" value="0.5"/>
 			<multiply skill_level="3" value="0.25"/>
@@ -113,12 +118,14 @@
 		<requirement skill_level="2" required_skill_name="Scavenging" required_skill_level="30"/>
 		<requirement skill_level="3" required_skill_name="Scavenging" required_skill_level="60"/>
 		<effect name="LootQuality">
+			<add perk_level="0" value="0"/>
 			<add skill_level="1" value="25"/>
 			<add skill_level="2" value="50"/>
 			<add skill_level="3" value="100"/>
 		</effect>
 	</perk>
-	<action_skill name="Light Armor" icon="light_armor" description_key="lightArmorDesc" title_key="lightArmor" exp_to_level="110" group="clothing">
+	<action_skill name="Light Armor" icon="light_armor" description_key="lightArmorDesc" title_key="lightArmor" exp_to_level="57" experience_multiplier="1.0195" group="clothing">
+	<!-- 10 hits to make level 2, 3000 hits to max it... instead of 64000 -->
 		<effect name="ArmorDefense">
 			<add skill_level="1,5" value="0,.03" />
 			<add skill_level="5,11" value=".03,.05" />
@@ -129,7 +136,7 @@
 			<add skill_level="70,100" value=".16,.2" />
 		</effect>
 		</action_skill>
-	<action_skill name="Heavy Armor" icon="armor_iron" description_key="heavyArmorDesc" title_key="heavyArmor" exp_to_level="110" group="clothing">
+	<action_skill name="Heavy Armor" icon="armor_iron" description_key="heavyArmorDesc" title_key="heavyArmor" exp_to_level="57" experience_multiplier="1.0195" group="clothing">
 		<effect name="ArmorDefense">
 			<add skill_level="1,5" value="0,.03" />
 			<add skill_level="5,11" value=".03,.05" />
@@ -142,7 +149,7 @@
 	</action_skill>
 
 	<!-- Item Usage Skills -->
-	<action_skill name="Blunt Weapons" icon="club" description_key="bluntWeaponsDesc" title_key="bluntWeapons" group="weapons">
+	<action_skill name="Blunt Weapons" exp_to_level="150" icon="club" description_key="bluntWeaponsDesc" title_key="bluntWeapons" group="weapons">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04" />
 			<multiply skill_level="5,11" value="1.04,1.07" />
@@ -152,8 +159,11 @@
 			<multiply skill_level="49,70" value="1.19,1.23" />
 			<multiply skill_level="70,100" value="1.23,1.28" />
 		</effect>
+		<effect name="HarvestCount">
+			<multiply skill_level="1,100" value="0,0" />
+		</effect>
 	</action_skill>
-	<action_skill name="Blade Weapons" icon="knife" description_key="bladeWeaponsDesc" title_key="bladeWeapons" group="weapons">
+	<action_skill name="Blade Weapons" exp_to_level="150" icon="knife" description_key="bladeWeaponsDesc" title_key="bladeWeapons" group="weapons">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04" />
 			<multiply skill_level="5,11" value="1.04,1.07" />
@@ -172,6 +182,7 @@
 		<requirement perk_level="4" required_skill_name="Blade Weapons" required_skill_level="60"/>
 		<requirement perk_level="5" required_skill_name="Blade Weapons" required_skill_level="80"/>
 		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="1.1125"/>
 			<multiply skill_level="2" value="1.225"/>
 			<multiply skill_level="3" value="1.3375"/>
@@ -179,6 +190,7 @@
 			<multiply skill_level="5" value="1.5625"/>
 		</effect>
 		<effect name="StaminaDegradation">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="0.9"/>
 			<multiply skill_level="2" value="0.8"/>
 			<multiply skill_level="3" value="0.7"/>
@@ -191,12 +203,13 @@
 		<requirement perk_level="2" required_skill_name="Blade Weapons" required_skill_level="75"/>
 		<requirement perk_level="3" required_skill_name="Blade Weapons" required_skill_level="100"/>
 		<effect name="DismembermentChance">
+			<add perk_level="0" value="0"/>
 			<add skill_level="1" value="0.1"/>
 			<add skill_level="2" value="0.2"/>
 			<add skill_level="3" value="0.3"/>
 		</effect>
 	</perk>
-	<action_skill name="Mining Tools" icon="mining" description_key="miningToolsDesc" title_key="miningTools" group="tools">
+	<action_skill name="Mining Tools" exp_to_level="500" icon="mining" description_key="miningToolsDesc" title_key="miningTools" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
 			<multiply skill_level="10,20" value="1.32,1.45"/>
@@ -210,7 +223,7 @@
 			<multiply skill_level="90,100" value="1.95,2.00"/>
 		</effect>
 	</action_skill>
-	<action_skill name="Construction Tools" icon="resource" description_key="constructionToolsDesc" title_key="constructionTools" group="tools">
+	<action_skill name="Construction Tools" exp_to_level="500" icon="resource" description_key="constructionToolsDesc" title_key="constructionTools" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
 			<multiply skill_level="10,20" value="1.32,1.45"/>
@@ -224,24 +237,33 @@
 			<multiply skill_level="90,100" value="1.95,2.00"/>
 		</effect>
 	</action_skill>
-	<perk name="Concrete Mixing" icon="resource" description_key="concreteMixingDesc" title_key="concreteMixing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+	<perk name="Concrete Mixing" icon="resource" description_key="concreteMixingDesc" title_key="concreteMixing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="40"/>
 		<recipe name="cement" unlock_level="1"/>
 		<recipe name="concreteMix" unlock_level="1"/>
-		<recipe name="cementMixer" unlock_level="1"/>
 	</perk>
-	<perk name="Steel Smithing" icon="resource" description_key="steelSmithingDesc" title_key="steelSmithing" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+	<perk name="Steel Smithing" icon="resource" description_key="steelSmithingDesc" title_key="steelSmithing" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="30" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="50"/>
 		<recipe name="forgedSteel" unlock_level="1"/>
 		<recipe name="steelArrowHead" unlock_level="1"/>
+		<requirement skill_level="2" required_skill_name="Construction Tools" required_skill_level="50"/>
+		<requirement skill_level="2" required_skill_name="Tool Smithing" required_skill_level="30"/>
+		<recipe name="spring" unlock_level="2"/>
+		<requirement skill_level="3" required_skill_name="Construction Tools" required_skill_level="70"/>
+		<requirement skill_level="3" required_skill_name="Tool Smithing" required_skill_level="50"/>
+		<recipe name="mechanicalParts" unlock_level="3"/>
 	</perk>
 	<!-- Workbench replaced with Advanced Tooling
-	<perk name="Workbench" icon="resource" description_key="workbenchSkillDesc" title_key="workbench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+	<perk name="Workbench" icon="resource" description_key="workbenchSkillDesc" title_key="workbench" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="20"/>
 		<recipe name="workbench" unlock_level="1"/>
+	</perk> -->
+	<perk name="ChemStationPerk" icon="resource" description_key="chemStationPerkDesc" title_key="chemistryStation" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
+		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="50"/>
+		<requirement skill_level="1" required_skill_name="Science" required_skill_level="15"/>
+		<recipe name="chemistryStation" unlock_level="1"/>
 	</perk>
-	-->
-	<action_skill name="Pistols" icon="pistol" description_key="pistolsDesc" title_key="pistols" group="firearms">
+	<action_skill name="Pistols" exp_to_level="150" icon="pistol" description_key="pistolsDesc" title_key="pistols" group="firearms">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04" />
 			<multiply skill_level="5,11" value="1.04,1.07" />
@@ -259,6 +281,7 @@
 		<requirement perk_level="4" required_skill_name="Pistols" required_skill_level="60"/>
 		<requirement perk_level="5" required_skill_name="Pistols" required_skill_level="80"/>
 		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="1.1125"/>
 			<multiply skill_level="2" value="1.225"/>
 			<multiply skill_level="3" value="1.3375"/>
@@ -271,12 +294,13 @@
 		<requirement perk_level="2" required_skill_name="Pistols" required_skill_level="75"/>
 		<requirement perk_level="3" required_skill_name="Pistols" required_skill_level="100"/>
 		<effect name="DismembermentChance">
+			<add perk_level="0" value="0"/>
 			<add skill_level="1" value="0.1"/>
 			<add skill_level="2" value="0.2"/>
 			<add skill_level="3" value="0.3"/>
 		</effect>
 	</perk>
-	<action_skill name="Shotguns" icon="shotgun" description_key="shotgunsDesc" title_key="shotguns" group="firearms">
+	<action_skill name="Shotguns" exp_to_level="150" icon="shotgun" description_key="shotgunsDesc" title_key="shotguns" group="firearms">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04" />
 			<multiply skill_level="5,11" value="1.04,1.07" />
@@ -294,6 +318,7 @@
 		<requirement perk_level="4" required_skill_name="Shotguns" required_skill_level="60"/>
 		<requirement perk_level="5" required_skill_name="Shotguns" required_skill_level="80"/>
 		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="1.1125"/>
 			<multiply skill_level="2" value="1.225"/>
 			<multiply skill_level="3" value="1.3375"/>
@@ -306,13 +331,15 @@
 		<requirement perk_level="2" required_skill_name="Shotguns" required_skill_level="75"/>
 		<requirement perk_level="3" required_skill_name="Shotguns" required_skill_level="100"/>
 		<effect name="DismembermentChance">
+			<add perk_level="0" value="0"/>
 			<add skill_level="1" value="0.1"/>
 			<add skill_level="2" value="0.2"/>
 			<add skill_level="3" value="0.3"/>
 		</effect>
 	</perk>
-	<action_skill name="Rifles" icon="rifle" description_key="riflesDesc" title_key="rifles" group="firearms">
+	<action_skill name="Rifles" exp_to_level="150" icon="rifle" description_key="riflesDesc" title_key="rifles" group="firearms">
 		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1,5" value="1,1.04" />
 			<multiply skill_level="5,11" value="1.04,1.07" />
 			<multiply skill_level="11,19" value="1.07,1.1" />
@@ -329,6 +356,7 @@
 		<requirement perk_level="4" required_skill_name="Rifles" required_skill_level="60"/>
 		<requirement perk_level="5" required_skill_name="Rifles" required_skill_level="80"/>
 		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="1.1125"/>
 			<multiply skill_level="2" value="1.225"/>
 			<multiply skill_level="3" value="1.3375"/>
@@ -336,7 +364,7 @@
 			<multiply skill_level="5" value="1.5625"/>
 		</effect>
 	</perk>
-	<action_skill name="Archery" icon="archery" description_key="archeryDesc" title_key="archery" group="weapons">
+	<action_skill name="Archery" exp_to_level="150" icon="archery" description_key="archeryDesc" title_key="archery" group="weapons">
 		<effect name="EntityDamage">
 			<multiply skill_level="1,5" value="1,1.04" />
 			<multiply skill_level="5,11" value="1.04,1.07" />
@@ -369,28 +397,22 @@
 	<crafting_skill name="Weapon Smithing" icon="weapon_smithing" description_key="weaponSmithingDesc" title_key="weaponSmithing" group="weapons">
 		<!-- Recipe locking example <recipe name="clubWood" unlock_level="1"/> -->
 		<effect name="CraftingTime">
-			<multiply skill_level="1,10" value="1.00,0.76"/>
-			<multiply skill_level="10,20" value="0.76,0.66"/>
-			<multiply skill_level="20,30" value="0.66,0.59"/>
-			<multiply skill_level="30,40" value="0.59,0.53"/>
-			<multiply skill_level="40,50" value="0.53,0.47"/>
-			<multiply skill_level="50,60" value="0.47,0.42"/>
-			<multiply skill_level="60,70" value="0.42,0.37"/>
-			<multiply skill_level="70,80" value="0.37,0.33"/>
-			<multiply skill_level="80,90" value="0.33,0.29"/>
-			<multiply skill_level="90,100" value="0.29,0.25"/>
+			<multiply skill_level="1,5" value="1,.931" />
+			<multiply skill_level="5,11" value=".931,.871" />
+			<multiply skill_level="11,19" value=".871,.813" />
+			<multiply skill_level="19,32" value=".813,.741" />
+			<multiply skill_level="32,49" value=".741,.667" />
+			<multiply skill_level="49,70" value=".667,.591" />
+			<multiply skill_level="70,100" value=".591,.5" />
 		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="1,10" value="1,239"/>
-			<setvalue skill_level="10,20" value="239,316"/>
-			<setvalue skill_level="20,30" value="316,371"/>
-			<setvalue skill_level="30,40" value="371,416"/>
-			<setvalue skill_level="40,50" value="416,455"/>
-			<setvalue skill_level="50,60" value="455,489"/>
-			<setvalue skill_level="60,70" value="489,520"/>
-			<setvalue skill_level="70,80" value="520,549"/>
-			<setvalue skill_level="80,90" value="549,575"/>
-			<setvalue skill_level="90,100" value="575,600"/>
+			<setvalue skill_level="1,5" value="1,69" />
+			<setvalue skill_level="5,11" value="69,129" />
+			<setvalue skill_level="11,19" value="129,187" />
+			<setvalue skill_level="19,32" value="187,259" />
+			<setvalue skill_level="32,49" value="259,334" />
+			<setvalue skill_level="49,70" value="334,409" />
+			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
 			<multiply skill_level="1,10" value="1.00,0.70"/>
@@ -428,28 +450,22 @@
 	</crafting_skill>
 	<crafting_skill name="Tool Smithing" icon="tool_smithing" description_key="toolSmithingDesc" title_key="toolSmithing" group="tools">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
+			<multiply skill_level="1,5" value="1,.931" />
+			<multiply skill_level="5,11" value=".931,.871" />
+			<multiply skill_level="11,19" value=".871,.813" />
+			<multiply skill_level="19,32" value=".813,.741" />
+			<multiply skill_level="32,49" value=".741,.667" />
+			<multiply skill_level="49,70" value=".667,.591" />
+			<multiply skill_level="70,100" value=".591,.5" />
 		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="1,10" value="1,239"/>
-			<setvalue skill_level="10,20" value="239,316"/>
-			<setvalue skill_level="20,30" value="316,371"/>
-			<setvalue skill_level="30,40" value="371,416"/>
-			<setvalue skill_level="40,50" value="416,455"/>
-			<setvalue skill_level="50,60" value="455,489"/>
-			<setvalue skill_level="60,70" value="489,520"/>
-			<setvalue skill_level="70,80" value="520,549"/>
-			<setvalue skill_level="80,90" value="549,575"/>
-			<setvalue skill_level="90,100" value="575,600"/>
+			<setvalue skill_level="1,5" value="1,69" />
+			<setvalue skill_level="5,11" value="69,129" />
+			<setvalue skill_level="11,19" value="129,187" />
+			<setvalue skill_level="19,32" value="187,259" />
+			<setvalue skill_level="32,49" value="259,334" />
+			<setvalue skill_level="49,70" value="334,409" />
+			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
 			<multiply skill_level="1,10" value="1.00,0.70"/>
@@ -485,30 +501,24 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
-	<crafting_skill name="Gun Smithing" icon="gunsmithing" description_key="gunSmithingDesc" title_key="gunSmithing" group="crafting">
+	<crafting_skill name="Gun Smithing" icon="gunsmithing" description_key="gunSmithingDesc" title_key="gunSmithing" group="firearms">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
+			<multiply skill_level="1,5" value="1,.931" />
+			<multiply skill_level="5,11" value=".931,.871" />
+			<multiply skill_level="11,19" value=".871,.813" />
+			<multiply skill_level="19,32" value=".813,.741" />
+			<multiply skill_level="32,49" value=".741,.667" />
+			<multiply skill_level="49,70" value=".667,.591" />
+			<multiply skill_level="70,100" value=".591,.5" />
 		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="1,10" value="1,239"/>
-			<setvalue skill_level="10,20" value="239,316"/>
-			<setvalue skill_level="20,30" value="316,371"/>
-			<setvalue skill_level="30,40" value="371,416"/>
-			<setvalue skill_level="40,50" value="416,455"/>
-			<setvalue skill_level="50,60" value="455,489"/>
-			<setvalue skill_level="60,70" value="489,520"/>
-			<setvalue skill_level="70,80" value="520,549"/>
-			<setvalue skill_level="80,90" value="549,575"/>
-			<setvalue skill_level="90,100" value="575,600"/>
+			<setvalue skill_level="1,5" value="1,69" />
+			<setvalue skill_level="5,11" value="69,129" />
+			<setvalue skill_level="11,19" value="129,187" />
+			<setvalue skill_level="19,32" value="187,259" />
+			<setvalue skill_level="32,49" value="259,334" />
+			<setvalue skill_level="49,70" value="334,409" />
+			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
 			<multiply skill_level="1,10" value="1.00,0.70"/>
@@ -535,6 +545,7 @@
 			<add skill_level="90,100" value="48,50"/>
 		</effect>
 		<effect name="RepairQualityLoss">
+<!--
 			<multiply skill_level="1,5" value="1.67,1.464" />
 			<multiply skill_level="5,11" value="1.464,1.283" />
 			<multiply skill_level="11,19" value="1.283,1.109" />
@@ -542,6 +553,15 @@
 			<multiply skill_level="32,49" value=".892,.668" />
 			<multiply skill_level="49,70" value=".668,.44" />
 			<multiply skill_level="70,100" value=".44,.167" />
+-->
+			<multiply skill_level="1,5" value="12,10.572" />
+			<multiply skill_level="5,11" value="10.572,9.323" />
+			<multiply skill_level="11,19" value="9.323,8.119" />
+			<multiply skill_level="19,32" value="8.119,6.619" />
+			<multiply skill_level="32,49" value="6.619,5.067" />
+			<multiply skill_level="49,70" value="5.067,3.487" />
+			<multiply skill_level="70,100" value="3.487,1.6" />
+			<!-- Known bug; see XML.txt; "12" and zero skills: 30 QL loss; "1.6" + Fixer = 2 points, almost down to 1 -->
 		</effect>
 	</crafting_skill>
 	<perk name="9mm Round Crafting" icon="gunsmithing" description_key="9mmRoundCraftingDesc" title_key="9mmRoundCrafting" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="5" group="firearms">
@@ -575,28 +595,22 @@
 	</perk>
 	<crafting_skill name="Science" icon="science" description_key="scienceDesc" title_key="science" group="crafting">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
+			<multiply skill_level="1,5" value="1,.931" />
+			<multiply skill_level="5,11" value=".931,.871" />
+			<multiply skill_level="11,19" value=".871,.813" />
+			<multiply skill_level="19,32" value=".813,.741" />
+			<multiply skill_level="32,49" value=".741,.667" />
+			<multiply skill_level="49,70" value=".667,.591" />
+			<multiply skill_level="70,100" value=".591,.5" />
 		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="1,10" value="1,239"/>
-			<setvalue skill_level="10,20" value="239,316"/>
-			<setvalue skill_level="20,30" value="316,371"/>
-			<setvalue skill_level="30,40" value="371,416"/>
-			<setvalue skill_level="40,50" value="416,455"/>
-			<setvalue skill_level="50,60" value="455,489"/>
-			<setvalue skill_level="60,70" value="489,520"/>
-			<setvalue skill_level="70,80" value="520,549"/>
-			<setvalue skill_level="80,90" value="549,575"/>
-			<setvalue skill_level="90,100" value="575,600"/>
+			<setvalue skill_level="1,5" value="1,69" />
+			<setvalue skill_level="5,11" value="69,129" />
+			<setvalue skill_level="11,19" value="129,187" />
+			<setvalue skill_level="19,32" value="187,259" />
+			<setvalue skill_level="32,49" value="259,334" />
+			<setvalue skill_level="49,70" value="334,409" />
+			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
 			<multiply skill_level="1,10" value="1.00,0.70"/>
@@ -632,30 +646,24 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
-	<crafting_skill name="Tailoring" exp_to_level="100" icon="tailoring" description_key="tailoringDesc" title_key="tailoring" group="clothing">
+	<crafting_skill name="Tailoring" icon="tailoring" description_key="tailoringDesc" title_key="tailoring" group="clothing">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
+			<multiply skill_level="1,5" value="1,.931" />
+			<multiply skill_level="5,11" value=".931,.871" />
+			<multiply skill_level="11,19" value=".871,.813" />
+			<multiply skill_level="19,32" value=".813,.741" />
+			<multiply skill_level="32,49" value=".741,.667" />
+			<multiply skill_level="49,70" value=".667,.591" />
+			<multiply skill_level="70,100" value=".591,.5" />
 		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="1,10" value="1,239"/>
-			<setvalue skill_level="10,20" value="239,316"/>
-			<setvalue skill_level="20,30" value="316,371"/>
-			<setvalue skill_level="30,40" value="371,416"/>
-			<setvalue skill_level="40,50" value="416,455"/>
-			<setvalue skill_level="50,60" value="455,489"/>
-			<setvalue skill_level="60,70" value="489,520"/>
-			<setvalue skill_level="70,80" value="520,549"/>
-			<setvalue skill_level="80,90" value="549,575"/>
-			<setvalue skill_level="90,100" value="575,600"/>
+			<setvalue skill_level="1,5" value="1,69" />
+			<setvalue skill_level="5,11" value="69,129" />
+			<setvalue skill_level="11,19" value="129,187" />
+			<setvalue skill_level="19,32" value="187,259" />
+			<setvalue skill_level="32,49" value="259,334" />
+			<setvalue skill_level="49,70" value="334,409" />
+			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
 			<multiply skill_level="1,10" value="1.00,0.70"/>
@@ -691,30 +699,24 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
-	<crafting_skill name="Leatherworking" exp_to_level="100" icon="armor_leather" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
+	<crafting_skill name="Leatherworking" icon="armor_leather" description_key="leatherworkingDesc" title_key="leatherworking" group="clothing">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
+			<multiply skill_level="1,5" value="1,.931" />
+			<multiply skill_level="5,11" value=".931,.871" />
+			<multiply skill_level="11,19" value=".871,.813" />
+			<multiply skill_level="19,32" value=".813,.741" />
+			<multiply skill_level="32,49" value=".741,.667" />
+			<multiply skill_level="49,70" value=".667,.591" />
+			<multiply skill_level="70,100" value=".591,.5" />
 		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="1,10" value="1,239"/>
-			<setvalue skill_level="10,20" value="239,316"/>
-			<setvalue skill_level="20,30" value="316,371"/>
-			<setvalue skill_level="30,40" value="371,416"/>
-			<setvalue skill_level="40,50" value="416,455"/>
-			<setvalue skill_level="50,60" value="455,489"/>
-			<setvalue skill_level="60,70" value="489,520"/>
-			<setvalue skill_level="70,80" value="520,549"/>
-			<setvalue skill_level="80,90" value="549,575"/>
-			<setvalue skill_level="90,100" value="575,600"/>
+			<setvalue skill_level="1,5" value="1,69" />
+			<setvalue skill_level="5,11" value="69,129" />
+			<setvalue skill_level="11,19" value="129,187" />
+			<setvalue skill_level="19,32" value="187,259" />
+			<setvalue skill_level="32,49" value="259,334" />
+			<setvalue skill_level="49,70" value="334,409" />
+			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
 			<multiply skill_level="1,10" value="1.00,0.70"/>
@@ -755,30 +757,24 @@
 		<recipe name="leather" unlock_level="1"/>
 	</perk>
 
-	<crafting_skill name="Armor Smithing" exp_to_level="100" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
+	<crafting_skill name="Armor Smithing" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
+			<multiply skill_level="1,5" value="1,.931" />
+			<multiply skill_level="5,11" value=".931,.871" />
+			<multiply skill_level="11,19" value=".871,.813" />
+			<multiply skill_level="19,32" value=".813,.741" />
+			<multiply skill_level="32,49" value=".741,.667" />
+			<multiply skill_level="49,70" value=".667,.591" />
+			<multiply skill_level="70,100" value=".591,.5" />
 		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="1,10" value="1,239"/>
-			<setvalue skill_level="10,20" value="239,316"/>
-			<setvalue skill_level="20,30" value="316,371"/>
-			<setvalue skill_level="30,40" value="371,416"/>
-			<setvalue skill_level="40,50" value="416,455"/>
-			<setvalue skill_level="50,60" value="455,489"/>
-			<setvalue skill_level="60,70" value="489,520"/>
-			<setvalue skill_level="70,80" value="520,549"/>
-			<setvalue skill_level="80,90" value="549,575"/>
-			<setvalue skill_level="90,100" value="575,600"/>
+			<setvalue skill_level="1,5" value="1,69" />
+			<setvalue skill_level="5,11" value="69,129" />
+			<setvalue skill_level="11,19" value="129,187" />
+			<setvalue skill_level="19,32" value="187,259" />
+			<setvalue skill_level="32,49" value="259,334" />
+			<setvalue skill_level="49,70" value="334,409" />
+			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
 			<multiply skill_level="1,10" value="1.00,0.70"/>
@@ -814,30 +810,24 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
-	<crafting_skill name="Miscellaneous Crafting" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting">
+	<crafting_skill name="Miscellaneous Crafting" exp_to_level="300" icon="misc_crafting" description_key="miscCraftingDesc" title_key="miscCrafting" group="crafting">
 		<effect name="CraftingTime">
-			<multiply skill_level="1,10" value="1.00,0.70"/>
-			<multiply skill_level="10,20" value="0.70,0.61"/>
-			<multiply skill_level="20,30" value="0.61,0.54"/>
-			<multiply skill_level="30,40" value="0.54,0.48"/>
-			<multiply skill_level="40,50" value="0.48,0.43"/>
-			<multiply skill_level="50,60" value="0.43,0.39"/>
-			<multiply skill_level="60,70" value="0.39,0.35"/>
-			<multiply skill_level="70,80" value="0.35,0.31"/>
-			<multiply skill_level="80,90" value="0.31,0.28"/>
-			<multiply skill_level="90,100" value="0.28,0.25"/>
+			<multiply skill_level="1,5" value="1,.931" />
+			<multiply skill_level="5,11" value=".931,.871" />
+			<multiply skill_level="11,19" value=".871,.813" />
+			<multiply skill_level="19,32" value=".813,.741" />
+			<multiply skill_level="32,49" value=".741,.667" />
+			<multiply skill_level="49,70" value=".667,.591" />
+			<multiply skill_level="70,100" value=".591,.5" />
 		</effect>
 		<effect name="CraftingQuality">
-			<setvalue skill_level="1,10" value="1,239"/>
-			<setvalue skill_level="10,20" value="239,316"/>
-			<setvalue skill_level="20,30" value="316,371"/>
-			<setvalue skill_level="30,40" value="371,416"/>
-			<setvalue skill_level="40,50" value="416,455"/>
-			<setvalue skill_level="50,60" value="455,489"/>
-			<setvalue skill_level="60,70" value="489,520"/>
-			<setvalue skill_level="70,80" value="520,549"/>
-			<setvalue skill_level="80,90" value="549,575"/>
-			<setvalue skill_level="90,100" value="575,600"/>
+			<setvalue skill_level="1,5" value="1,69" />
+			<setvalue skill_level="5,11" value="69,129" />
+			<setvalue skill_level="11,19" value="129,187" />
+			<setvalue skill_level="19,32" value="187,259" />
+			<setvalue skill_level="32,49" value="259,334" />
+			<setvalue skill_level="49,70" value="334,409" />
+			<setvalue skill_level="70,100" value="409,500" />
 		</effect>
 		<effect name="RepairTime">
 			<multiply skill_level="1,10" value="1.00,0.70"/>
@@ -880,6 +870,7 @@
 		<requirement perk_level="4" required_player_level="30" />
 		<requirement perk_level="5" required_player_level="40" />
 		<effect name="HungerDegradation">
+			<multiply perk_level="0" value="1"/>
 			<multiply perk_level="1" value="0.9"/>
 			<multiply perk_level="2" value="0.8"/>
 			<multiply perk_level="3" value="0.7"/>
@@ -887,6 +878,7 @@
 			<multiply perk_level="5" value="0.5"/>
 		</effect>
 		<effect name="WellnessGain">
+			<multiply perk_level="0" value="1"/>
 			<multiply perk_level="1" value="1.11"/>
 			<multiply perk_level="2" value="1.25"/>
 			<multiply perk_level="3" value="1.43"/>
@@ -901,6 +893,7 @@
 		<requirement perk_level="4" required_player_level="30" />
 		<requirement perk_level="5" required_player_level="40" />
 		<effect name="StaminaDegradation">
+			<multiply perk_level="0" value="1"/>
 			<multiply perk_level="1" value="0.9"/>
 			<multiply perk_level="2" value="0.8"/>
 			<multiply perk_level="3" value="0.7"/>
@@ -915,6 +908,7 @@
 		<requirement perk_level="4" required_player_level="30" />
 		<requirement perk_level="5" required_player_level="40" />
 		<effect name="ThirstDegradation">
+			<multiply perk_level="0" value="1"/>
 			<multiply perk_level="1" value="0.9"/>
 			<multiply perk_level="2" value="0.8"/>
 			<multiply perk_level="3" value="0.7"/>
@@ -929,6 +923,7 @@
 		<requirement perk_level="4" required_player_level="30" />
 		<requirement perk_level="5" required_player_level="40" />
 		<effect name="CraftingTime">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="0.9"/>
 			<multiply skill_level="2" value="0.8"/>
 			<multiply skill_level="3" value="0.7"/>
@@ -943,6 +938,7 @@
 		<requirement perk_level="4" required_player_level="30" />
 		<requirement perk_level="5" required_player_level="40" />
 		<effect name="RepairTime">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="0.9"/>
 			<multiply skill_level="2" value="0.8"/>
 			<multiply skill_level="3" value="0.7"/>
@@ -950,6 +946,7 @@
 			<multiply skill_level="5" value="0.5"/>
 		</effect>
 		<effect name="RepairAmount">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="1.1"/>
 			<multiply skill_level="2" value="1.2"/>
 			<multiply skill_level="3" value="1.3"/>
@@ -957,6 +954,7 @@
 			<multiply skill_level="5" value="1.5"/>
 		</effect>
 		<effect name="RepairQualityLoss">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value=".9"/>
 			<multiply skill_level="2" value=".8"/>
 			<multiply skill_level="3" value=".7"/>
@@ -972,6 +970,7 @@
 		<requirement perk_level="4" required_skill_name="Blunt Weapons" required_skill_level="60"/>
 		<requirement perk_level="5" required_skill_name="Blunt Weapons" required_skill_level="80"/>
 		<effect name="EntityDamage">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="1.1125"/>
 			<multiply skill_level="2" value="1.225"/>
 			<multiply skill_level="3" value="1.3375"/>
@@ -979,6 +978,7 @@
 			<multiply skill_level="5" value="1.5625"/>
 		</effect>
 		<effect name="StaminaDegradation">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="0.9"/>
 			<multiply skill_level="2" value="0.8"/>
 			<multiply skill_level="3" value="0.7"/>
@@ -986,6 +986,24 @@
 			<multiply skill_level="5" value="0.5"/>
 		</effect>
 	</perk>
+
+	<perk name="Breaking And Entering" icon="club" description_key="breakingAndEnteringDesc" title_key="breakingAndEntering" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
+		<requirement perk_level="1" required_skill_name="Blunt Weapons" required_skill_level="1"/>
+		<requirement perk_level="1" required_skill_name="Pummel Pete" required_skill_level="1"/>
+		<requirement perk_level="2" required_skill_name="Pummel Pete" required_skill_level="2"/>
+		<requirement perk_level="3" required_skill_name="Pummel Pete" required_skill_level="3"/>
+		<requirement perk_level="4" required_skill_name="Pummel Pete" required_skill_level="4"/>
+		<requirement perk_level="5" required_skill_name="Pummel Pete" required_skill_level="5"/>
+		<effect name="BlockDamage">
+			<multiply perk_level="0" value="1"/>
+			<multiply skill_level="1" value="1.2"/>
+			<multiply skill_level="2" value="1.4"/>
+			<multiply skill_level="3" value="1.6"/>
+			<multiply skill_level="4" value="1.8"/>
+			<multiply skill_level="5" value="2.0"/>
+		</effect>
+	</perk>
+
 	<perk name="Miner 69er" icon="mining" description_key="miner69erDesc" title_key="miner69er" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
 		<requirement perk_level="1" required_skill_name="Mining Tools" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Mining Tools" required_skill_level="20"/>
@@ -993,6 +1011,7 @@
 		<requirement perk_level="4" required_skill_name="Mining Tools" required_skill_level="60"/>
 		<requirement perk_level="5" required_skill_name="Mining Tools" required_skill_level="80"/>
 		<effect name="BlockDamage">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="1.2"/>
 			<multiply skill_level="2" value="1.4"/>
 			<multiply skill_level="3" value="1.6"/>
@@ -1000,6 +1019,7 @@
 			<multiply skill_level="5" value="2.0"/>
 		</effect>
 		<effect name="StaminaDegradation">
+			<multiply perk_level="0" value="1"/>
 			<multiply skill_level="1" value="0.9"/>
 			<multiply skill_level="2" value="0.8"/>
 			<multiply skill_level="3" value="0.7"/>
@@ -1010,14 +1030,38 @@
 
 	<perk name="Treasure Hunter" icon="treasure" description_key="treasureHunterDesc" title_key="treasureHunter" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">
 		<effect name="TreasureRadius">
+			<setvalue perk_level="0" value="11"/>
 			<setvalue skill_level="1" value="9"/>
 			<setvalue skill_level="2" value="7"/>
 			<setvalue skill_level="3" value="5"/>
 		</effect>
 	</perk>
 
+	<player_skill name="Barter" exp_to_level="25" experience_multiplier="1.0606" icon="coin" description_key="barterDesc" title_key="barter" group="scavenging">
+		<effect name="Bartering">
+			<add skill_level="1,10" value="0.00,0.15"/>	
+			<add skill_level="10,20" value="0.15,0.23"/>	
+			<add skill_level="20,30" value="0.23,0.29"/>	
+			<add skill_level="30,40" value="0.29,0.35"/>	
+			<add skill_level="40,50" value="0.35,0.40"/>	
+			<add skill_level="50,60" value="0.40,0.44"/>	
+			<add skill_level="60,70" value="0.44,0.48"/>	
+			<add skill_level="70,80" value="0.48,0.52"/>	
+			<add skill_level="80,90" value="0.52,0.56"/>	
+			<add skill_level="90,100" value="0.56,0.60"/>	
+		</effect>
+	</player_skill>
+	
+	<perk name="Secret Stash" icon="safe" description_key="secretStashDesc" title_key="secretStash" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="scavenging">
+		<effect name="SecretStash">
+			<add perk_level="0" value="0"/>
+			<add skill_level="1" value="25" required_skill_name="Barter" required_skill_level="25"/>
+			<add skill_level="2" value="50" required_skill_name="Barter" required_skill_level="50"/>
+			<add skill_level="3" value="75" required_skill_name="Barter" required_skill_level="75"/>
+		</effect>
+	</perk>
+	
 <!-- New Perks -->
-
 	<perk name="Silent But Deadly I" icon="gunsmithing" description_key="silentButDeadly1Desc" title_key="Silent But Deadly I" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="crafting">
 		<requirement skill_level="1" required_skill_name="Gun Smithing" required_skill_level="10"/>
 		<recipe name="partsSuppressor" unlock_level="1"/>
@@ -1054,11 +1098,6 @@
 		<recipe name="gunsuppressedSniperRifle" unlock_level="1"/>
 	</perk>
 	
-	<perk name="Rebreather" icon="tool_smithing" description_key="Unlocks the ability to craft a rebreather that allows you to breathe underwater." title_key="Rebreather" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="20" >
-		<requirement skill_level="1" required_skill_name="Miscellaneous Crafting" required_skill_level="50"/>
-		<recipe name="Rebreather" unlock_level="1"/>
-	</perk>
-
 	<perk name="Masamune, Jr." icon="weapon_smithing" description_key="MasamuneJrDesc" title_key="MasamuneJr" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" >
 		<requirement skill_level="1" required_skill_name="Steel Smithing" required_skill_level="1"/>
 		<recipe name="kukri" unlock_level="1"/>
@@ -1071,7 +1110,6 @@
 		<recipe name="forge" unlock_level="1"/>
 		<recipe name="calipers" unlock_level="1"/>
 	</perk>
-	
 	
 <!-- Carpentry skill and perk -->
 	<action_skill name="Carpentry Tools" icon="mining" description_key="carpentryToolsDesc" title_key="carpentryTools" group="tools">
@@ -1136,6 +1174,7 @@
 	</perk>
 <!-- End William Tell -->	
 <!-- End New Perks -->	
+	
 </skills>
 
 </progression>
@@ -1168,6 +1207,10 @@ EFFECTS:
 	DismembermentChance,
 	DismembermentBonus
 
+	TreasureRadius
+	Bartering
+	SecretStash
+	LockPickChance
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 

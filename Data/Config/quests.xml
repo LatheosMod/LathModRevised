@@ -32,7 +32,7 @@
 		
 		<objective type="FetchKeep" id="yuccaFibers" value="2" />
 		<objective type="FetchKeep" id="wood" value="2" />
-		<objective type="FetchKeep" id="rockSmall" value="2" />
+		<objective type="FetchKeep" id="rockSmall" value="5" />
 	
 		<objective type="Craft" id="stoneAxe" value="1" />
 		<reward type="Quest" id="quest_BasicSurvival2" />
@@ -65,7 +65,7 @@
 
 	<!-- Basic Survival 4 - Craft a Wooden Club /> -->	
 	<quest id="quest_BasicSurvival4" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival4" subtitle_key="quest_BasicSurvival4_subtitle" description_key="quest_BasicSurvival4_description" icon="ui_game_symbol_club" category_key="Quest">
-		<objective type="FetchKeep" id="wood" value="5" />
+		<objective type="FetchKeep" id="wood" value="10" />
 		<objective type="Craft" id="clubWood" value="1" />
 		
 		<reward type="Quest" id="quest_BasicSurvival5" />
@@ -73,7 +73,7 @@
 
 	<!-- Basic Survival 5 - Craft Bow & Arrows /> -->		
 	<quest id="quest_BasicSurvival5" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival5" subtitle_key="quest_BasicSurvival5_subtitle" description_key="quest_BasicSurvival5_description" icon="ui_game_symbol_archery" category_key="Quest">
-		<objective type="FetchKeep" id="wood" value="8" />
+		<objective type="FetchKeep" id="wood" value="14" />
 		<objective type="FetchKeep" id="yuccaFibers" value="3" />
 		<objective type="FetchKeep" id="feather" value="2" />
 		<objective type="FetchKeep" id="rockSmall" value="2" />
@@ -85,7 +85,7 @@
 
 	<!-- Basic Survival 6 - Start a Base /> -->	
 	<quest id="quest_BasicSurvival6" group_name_key="quest_BasicSurvival" name_key="quest_BasicSurvival6" subtitle_key="quest_BasicSurvival6_subtitle" description_key="quest_BasicSurvival6_description" icon="ui_game_symbol_map_house" category_key="Quest">
-		<objective type="FetchKeep" id="wood" value="60" />
+		<objective type="FetchKeep" id="wood" value="45" />
 		<objective type="Craft" id="woodFrameBlock" value="3" />
 		<objective type="BlockPlace" id="woodFrameBlock" value="3" />
 		<objective type="BlockUpgrade" id="woodFrameBlock" value="3" />
@@ -110,9 +110,15 @@
 		
 		<reward type="SkillPoints" value="1" />
 		<reward type="ShowTip" value="tutorialTipQuest03" stage="aftercomplete" />
+		<reward type="Quest" id="quest_whiteRiverCitizen1" stage="aftercomplete" />
     </quest>
 	
+	<!-- White River Citizen 1 - Journey to Settlement -->
+	<quest id="quest_whiteRiverCitizen1" group_name_key="quest_WhiteRiverCitizen" name_key="quest_WhiteRiverCitizen1" subtitle_key="quest_WhiteRiverCitizen1_subtitle" description_key="quest_WhiteRiverCitizen1_description" icon="ui_game_symbol_map_trader" category_key="Quest">
+		<objective type="Goto" id="trader" value="5" />
 	
+		<reward type="SkillPoints" value="1" />
+    </quest>
 	
 	<!-- CHALLENGES -->
 	<quest id="challenge_silenceofthelambs" name_key="challenge_silenceofthelambs" subtitle_key="challenge_silenceofthelambs_subtitle" description_key="challenge_silenceofthelambs_offer" icon="ui_game_symbol_zombie" 
@@ -331,7 +337,6 @@
 	</quest>
 	
 	<!-- Custom Quests -->
-	
 	<quest id="challenge_shittywaytodie" name_key="challenge_shittywaytodie" subtitle_key="challenge_shittywaytodie_subtitle" description_key="challenge_shittywaytodie_offer" icon="ui_game_symbol_zombie" 
 		repeatable="true" category_key="challenge" offer_key="challenge_shittywaytodie_offer" difficulty="hard">
 		
@@ -341,9 +346,8 @@
 		<requirement type="Holding" id="poopLauncher" />
 		
 		<reward type="SkillPoints" value="1" />
-		<reward type="SkillPoints" value="2" optional="true" />
+		<reward type="SkillPoints" value="1" optional="true" />
 	</quest>
-
 	<!-- End Custom Quests -->
 	
 	<!-- <quest id="customtestquest" name="Prime's Quest" subtitle="Kill some zombies" description="Go out and murder 5 zombies.\n\nDon't let your dreams be dreams." offer="Just click accept...you know you want to.\n\nTest" 
@@ -351,6 +355,5 @@
 		<objective type="ZombieKill" value="5" />
 		<reward type="SkillPoints" value="1" />
 	</quest>  -->
-	
 	
 </quests>

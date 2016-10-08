@@ -1,28 +1,4 @@
 <xui>
-
-	<!-- 
-
-		Origin - "7 Days to Die" UI Mod by Tritox:
-
-		Game version:	A14.7(b6)
-		Mod version:	1.0
-		Date:			15.6.2016
-	
-	-->
-
-	<!-- ====================== xui.xml starts ======================= -->
-
-	<!--	
-		
-		Additions to default content: 
-
-			1) Line: 99   - added: new window (HUDInfoPanel)
-			2) Line: 120  - added: new window (HUDTempWaterFood)
-			3) Line: 121  - added: new window (HUDXpBar) 
-			4) Line: 122  - added: new window (HUDBuffDurations) 
-	
-	-->
-
 	<ruleset name="default" scale="1.1" stackpanel_scale="1.05">
 	
 		<window_group name="crafting" controller="XUiC_CraftingWindowGroup">
@@ -73,7 +49,17 @@
 			<window name="windowCraftingQueue"/>
 			<window name="windowOutput" />
 			<window name="windowNonPagingHeader" />
+			<window name="windowCombine" />
 		</window_group>				
+
+		<window_group name="workstation_chemistryStation" controller="XUiC_WorkstationWindowGroup">
+			<window name="windowCraftingList"/>
+			<window name="craftingInfoPanel"/>
+			<window name="windowCraftingQueue"/>
+			<window name="windowFuel" />
+			<window name="windowOutput" />
+			<window name="windowNonPagingHeader" />
+		</window_group>
 		
 		<window_group name="looting" left_panel_valign_top="false" controller="XUiC_LootWindowGroup">
 			<window name="windowLooting"/>
@@ -93,12 +79,31 @@
 		<window_group name="dragAndDrop">
 			<window name="dragAndDropItemStack" />
 		</window_group>
-		
+
+<!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
+
 		<window_group name="compass">
-			<window name="windowCompass" />
-			<window name="HUDInfoPanel"/>								<!-- 1) added: day, time, world temperature and elevation indicators (top left) -->
+			<window name="SMXCompass1" />									<!-- Swappable frame. Change between different compass frames by changing the number. Choose between 1-2 -->
+																										<!-- 1: Standard Compass -->
+																										<!-- 2: Medieval Compass - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
+<!--		<window name="windowCompass" /> -->
+			<window name="SMXQuestTracker" anchor="RightTop" />
+			<window name="SMXBuffFrame4" anchor="LeftBottom" />				<!-- Swappable frame. Change between different buff frames by changing the number. Choose between 1-4 -->
+																										<!-- 1: Standard Buff Frames -->
+																										<!-- 2: Standard Buff Frames - Small -->
+																										<!-- 3: Improved Buff Frames -->
+																										<!-- 4: Improved Buff Frames - Small -->
+			<window name="SMX" anchor="RightTop" />
+			<window name="SMXLevelXPUF1" />									<!-- Swappable frame. Change between different Level/XP displays by changing the number. Choose between 1-2 -->
+																										<!-- 1: Standard Level/XP Frame -->
+																										<!-- 2: Medieval Level/XP Frame - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
+
+			<window name="SMXDayTimeFrame" />
+<!--		<window name="SMXminiMap" /> -->
 		</window_group>
-		
+
+<!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
+
 		<window_group name="toolTip">
 			<window name="toolTip" />
 			<window name="popupMenu" />
@@ -115,17 +120,28 @@
 		<window_group name="timer">
 			<window name="windowTimer"/>
 		</window_group>
-		
+
+<!-- <<< SMX v15b104e r08 START - BY SIRILLION >>> -->
+
 		<window_group name="toolbelt">
-			<window name="HUDTempWaterFood"/>							<!-- 2) added: feels like -temperature, water and food indicators (bottom left) -->
-			<window name="HUDXpBar" />									<!-- 3) added: player level indicator, experience bar and toolbelt numbers (bottom center)  -->
-		<!--	<window name="HUDBuffDurations"/> -->					<!-- 4) added: buff durations (middle center)  -->
-			<window name="windowToolbelt" anchor="CenterBottom" />
-			<window name="HUDLeftStatBars" anchor="LeftBottom" />
-			<window name="HUDRightStatBars" anchor="RightBottom" />
-			<window name="windowQuestTracker" anchor="RightTop" />
+			<window name="SMXToolbelt1" anchor="CenterBottom" />			<!-- Swappable frame. Change between different tool belts by changing the number. Choose between 1-2 -->
+																										<!-- 1: Standard Tool Belt -->
+																										<!-- 2: Medieval Tool Belt - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
+<!--		<window name="windowToolbelt" anchor="CenterBottom" /> -->
+			<window name="SMXUnitFrame1" anchor="LeftBottom" />				<!-- Swappable frame. Change between different unit frames by changing the number. Choose between 1-2 -->
+																										<!-- 1: Standard Unit Frame -->
+																										<!-- 2: Medieval Unit Frame - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
+<!--		<window name="HUDLeftStatBars" anchor="LeftBottom" /> -->
+			<window name="SMXHudOther" anchor="RightBottom" />
+<!--		<window name="HUDRightStatBars" anchor="RightBottom" /> -->
+<!--		<window name="windowQuestTracker" anchor="RightTop" /> -->
+			<window name="SMXTempFrameUF1" />								<!-- Swappable frame. Change between different temperature displays by changing the number. Choose between 1-2 -->
+																										<!-- 1: Standard Temp Frame -->
+																										<!-- 2: Medieval Temp Frame - IN DEVELOPMENT, NOT INCLUDED IN THIS VERSION -->
 		</window_group>
-		
+
+<!-- <<< SMX v15b104e r08 END - BY SIRILLION >>> -->
+
 		<window_group name="vehicle" controller="XUiC_VehicleWindowGroup">
 			<window name="windowVehicle"/>
 			<window name="windowNonPagingHeader" />
@@ -173,6 +189,11 @@
 			<window name="windowQuestRewards" />
 		</window_group>
 		
+		<window_group name="journal" controller="XUiC_JournalWindowGroup">
+			<window name="windowJournalList" />
+			<window name="windowJournalEntryDescription" />
+		</window_group>
+		
 		<window_group name="profiles">
 			<window name="windowArchetypePreview"/>
 		</window_group>
@@ -180,6 +201,21 @@
 		<window_group name="archetypes" controller="XUiC_ArchetypesWindowGroup" stack_panel_y_offset="332">
 			<window name="windowArchetypePreview2"/>
 			<window name="windowSliders"/>
+			<window name="windowColorPicker"/>
+		</window_group>
+		
+		<window_group name="trader" controller="XUiC_TraderWindowGroup">
+			<window name="windowTrader"/>
+			<window name="windowNonPagingHeader" />
+			<window name="serviceInfoPanel"/>
+		</window_group>
+		
+		<window_group name="sign">
+			<window name="windowSignEdit" />
+		</window_group>
+		
+		<window_group name="rwgeditor" controller="XUiC_RWGEditorWindowGroup">
+			<window name="windowRWGPreview" />
 		</window_group>
 	</ruleset>
 </xui>
