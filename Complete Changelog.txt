@@ -469,3 +469,12 @@ Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, 
 Removed brass crafting, including brass mallet
 Removed drawbridges, as A15 features its own
 Removed steel armor, as A15 features bandit armor to fill this niche
+
+----->08 Oct 2016<-----
+LathMod 4.01
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Renamed Brass Flashlight to Homemade Flashlight, with all parts, recipes, and localization set properly
+Added CraftingSkillGroup of Science to carbon steel
+Changed requirement for Masamune, Jr. to Steel Smithing level 2 and Science 15
+Added recipe for machete to Advanced Tooling
+Added scrapCable to harvest for refrigerators and cars

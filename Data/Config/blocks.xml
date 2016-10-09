@@ -2865,6 +2865,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapIron" count="40" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapPlastics" count="3" prob=".8" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapCable" count="1" prob=".15" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="10" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
 	<property name="EconomicValue" value="192" />
@@ -7287,6 +7288,7 @@ kind of free
 	<drop event="Harvest" name="electronicParts" count="1" prob=".2" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="2" prob=".15" tool_category="Disassemble" />
 	<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapCable" count="1" prob=".15" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapIron" count="15" tool_category="Disassemble" />
 	<drop event="Destroy" name="scrapIron" count="5" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob=".75" stick_chance="1" />
@@ -7302,6 +7304,7 @@ kind of free
 	<drop event="Harvest" name="electronicParts" count="1" prob=".2" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="2" prob=".15" tool_category="Disassemble" />
 	<drop event="Harvest" name="shortMetalPipe" count="1" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapCable" count="1" prob=".15" tool_category="Disassemble" />
 	<drop event="Harvest" name="scrapIron" count="15" tool_category="Disassemble" />
 </block>
 
@@ -11837,6 +11840,7 @@ kind of free
 	<drop event="Harvest" name="mechanicalParts" count="2" prob=".1" tool_category="Disassemble" />
 	<drop event="Harvest" name="electricParts" count="3" prob=".3" tool_category="Disassemble" />
 	<drop event="Harvest" name="electronicParts" count="2" prob=".2" tool_category="Disassemble" />
+	<drop event="Harvest" name="scrapCable" count="1" prob=".15" tool_category="Disassemble" />
 	<!-- <drop event="Fall" name="cntCar03Damage2" count="1" prob="1.0" stick_chance="1" /> -->
 	<property name="DowngradeBlock" value="cntCar03Damage2" />
 	<property name="BigDecorationRadius" value="5" />

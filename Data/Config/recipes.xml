@@ -2479,27 +2479,27 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="unit_brass" count="5"/>
 </recipe>
 
-<recipe name="brassFlashlight" count="1" scrapable="True" >
-    <ingredient name="brassFlashlightBarrel" count="1" />
-    <ingredient name="brassFlashlightCap" count="1" />
+<recipe name="homemadeFlashlight" count="1" scrapable="True" >
+    <ingredient name="homemadeFlashlightBarrel" count="1" />
+    <ingredient name="homemadeFlashlightCap" count="1" />
     <ingredient name="headlight" count="1" />
     <ingredient name="potatoBattery" count="1" />
 </recipe>
 
-<recipe name="brassFlashlight" count="1" scrapable="True" >
-    <ingredient name="brassFlashlightBarrel" count="1" />
-    <ingredient name="brassFlashlightCap" count="1" />
+<recipe name="homemadeFlashlight" count="1" scrapable="True" >
+    <ingredient name="homemadeFlashlightBarrel" count="1" />
+    <ingredient name="homemadeFlashlightCap" count="1" />
     <ingredient name="headlight" count="1" />
     <ingredient name="dcellBattery" count="2" />
 </recipe>
 
-<recipe name="brassFlashlightBarrel" count="1" scrapable="True" >
+<recipe name="homemadelashlightBarrel" count="1" scrapable="True" >
     <ingredient name="shortMetalPipe" count="1" />
     <ingredient name="electricParts" count="1" />
     <ingredient name="scrapBrass" count="5" />
 </recipe>
 
-<recipe name="brassFlashlightCap" count="1" scrapable="True" >
+<recipe name="homemadeFlashlightCap" count="1" scrapable="True" >
     <ingredient name="shortMetalPipe" count="1" />
     <ingredient name="scrapBrass" count="5" />
     <ingredient name="spring" count="1" />
@@ -2554,13 +2554,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- End Misc Items -->
 
 <!-- Iron Bows -->
-<recipe name="IronBow" count="1" scrapable="True" >
+<recipe name="IronBow" count="1" scrapable="True" craft_area="workbench" >
 	<ingredient name="forgedIron" count="6" />
 	<ingredient name="scrapCable" count="3" />
 	<ingredient name="leather" count="1" />
 </recipe>
 	
-<recipe name="ironCrossbow" count="1" scrapable="True" >
+<recipe name="ironCrossbow" count="1" scrapable="True" craft_area="workbench" >
 	<ingredient name="forgedIron" count="5" />
 	<ingredient name="scrapCable" count="4" />
 	<ingredient name="wood" count="3" />
@@ -2571,49 +2571,49 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- Lighted Helmets -->
 <recipe name="Cloth Hat (Light)" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
-	<ingredient name="brassFlashlight" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="clothHat" count="1" />
 </recipe>
 
 <recipe name="Cowboy Hat (Light)" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
-	<ingredient name="brassFlashlight" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="cowboyHat" count="1" />
 </recipe>
 	
 <recipe name="Football Helmet (Light)" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
-	<ingredient name="brassFlashlight" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="footballHelmet" count="1" />
 </recipe>
 
 <recipe name="Iron Helmet (Light)" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
-	<ingredient name="brassFlashlight" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="ironHelmet" count="1" />
 </recipe>
 	
 <recipe name="Military Helmet (Light)" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
-	<ingredient name="brassFlashlight" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="militaryHelmet" count="1" />
 </recipe>
 	
 <recipe name="Leather Hood (Light)" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
-	<ingredient name="brassFlashlight" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="leatherHood" count="1" />
 </recipe>
 	
 <recipe name="Scrap Helmet (Light)" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
-	<ingredient name="brassFlashlight" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="scrapHelmet" count="1" />
 </recipe>
 			
 <recipe name="Swat Helmet (Light)" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
-	<ingredient name="brassFlashlight" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="swatHelmet" count="1" />
 </recipe>
 	
@@ -2942,6 +2942,15 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="potassiumNitratePowder" count="2"/>
 </recipe>
 <!-- End Salted Meat -->
+
+<!-- Machete -->
+<recipe name="machete" count="1">
+	<ingredient name="forgedIron" count="12"/>
+	<ingredient name="wood" count="10"/>
+</recipe>
+<!-- End Machete -->
+
+
 <!-- End Custom Recipes -->
 
 </recipes>

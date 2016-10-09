@@ -1099,7 +1099,8 @@
 	</perk>
 	
 	<perk name="Masamune, Jr." icon="weapon_smithing" description_key="MasamuneJrDesc" title_key="MasamuneJr" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" >
-		<requirement skill_level="1" required_skill_name="Steel Smithing" required_skill_level="1"/>
+		<requirement skill_level="1" required_skill_name="Steel Smithing" required_skill_level="2"/>
+		<requirement skill_level="1" required_skill_name="Science" required_skill_level="15"/>
 		<recipe name="kukri" unlock_level="1"/>
 		<recipe name="carbonSteel" unlock_level="1"/>
 	</perk>
@@ -1109,6 +1110,7 @@
 		<recipe name="workbench" unlock_level="1"/>
 		<recipe name="forge" unlock_level="1"/>
 		<recipe name="calipers" unlock_level="1"/>
+		<recipe name="machete" unlock_level="1"/>
 	</perk>
 	
 <!-- Carpentry skill and perk -->

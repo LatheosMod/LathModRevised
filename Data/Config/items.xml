@@ -9197,7 +9197,7 @@ which does not exist, yet. -->
 	<property name="CustomIcon" value="repeatingCrossbowSchematic" />
 	<property class="Action1">
 		<!-- UseAction -->
-		<property name="Recipes_to_learn" value="repeatingCrossbow,crossbowStock,crossbowDeck,crossbowLimb,crossbowScope" />
+		<property name="Recipes_to_learn" value="repeatingCrossbow,partscrossbowStock,partscrossbowLimb,partscrossbowDeck,partscrossbowScope" />
 		<property name="Skills_to_gain" value="Weapon Smithing" />
 	</property>
 	<property name="DescriptionKey" value="repeatingCrossbowSchematicDesc"/>
@@ -10090,7 +10090,7 @@ which does not exist, yet. -->
 <!-- End Leather Duster Schematic -->
 
 <!-- Brass Flashlight -->
-<item id="2046" name="brassFlashlight">
+<item id="2046" name="homemadeFlashlight">
 	<property name="CustomIcon" value="brassFlashlight" />
 	<property name="Class" value="ItemClassToggle" />
 	<property name="Meshfile" value="Items/Tools/flashlight02Prefab" />
@@ -10117,31 +10117,31 @@ which does not exist, yet. -->
 		<property name="DegradationMax" value="300,6000" />
 	</property>
 	<property name="Group" value="Tools/Traps" />
-	<property name="DescriptionKey" value="brassFlashlightDesc" />
+	<property name="DescriptionKey" value="homemadeFlashlightDesc" />
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
-<item id="2047" name="brassFlashlightBarrel">
+<item id="2047" name="homemadeFlashlightBarrel">
 	<property name="CustomIcon" value="brassFlashlightBarrel" />
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="PartType" value="Stock" />
-	<property name="Material" value="brass" />
+	<property name="Material" value="metal" />
 	<property name="HoldType" value="16" />
 	<property name="Group" value="Resources" />
-	<property name="DescriptionKey" value="brassFlashlightBarrelDesc" />
+	<property name="DescriptionKey" value="homemadeFlashlightBarrelDesc" />
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
-<item id="2048" name="brassFlashlightCap">
+<item id="2048" name="homemadeFlashlightCap">
 	<property name="CustomIcon" value="brassFlashlightCap" />
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="PartType" value="Receiver" />
-	<property name="Material" value="brass" />
+	<property name="Material" value="metal" />
 	<property name="HoldType" value="16" />
 	<property name="Group" value="Resources" />
-	<property name="DescriptionKey" value="brassFlashlightCapDesc" />
+	<property name="DescriptionKey" value="homemadeFlashlightCapDesc" />
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
@@ -10171,6 +10171,7 @@ which does not exist, yet. -->
 	<property name="RepairTime" value="1" />
 	<property name="RepairAmount" value="400" />
 	<property name="DescriptionKey" value="carbonSteelDesc" />
+	<property name="CraftingSkillGroup" value="Science"/>
 </item>
 
 <item id="2051" name="kukri">
