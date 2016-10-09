@@ -9904,7 +9904,7 @@ which does not exist, yet. -->
         <property name="Class" value="Eat" />
         <property name="Delay" value="1.0" />
         <property name="Use_time" value="..." />
-        <property name="Gain_health" value="2" />
+        <property name="Gain_health" value="0" />
         <property name="Gain_food" value="10" />
         <property name="Gain_water" value="0" />
         <property name="Gain_stamina" value="0" />
@@ -9919,7 +9919,7 @@ which does not exist, yet. -->
 <item id="2038" name="ZiplockBag">
     <property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="CustomIcon" value="ZiplockBag" />
-    <property name="Material" value="cloth" />
+    <property name="Material" value="Mplastics" />
     <property name="HoldType" value="14" />
     <property name="Weight" value="5" />
     <property name="Group" value="Resources" />
@@ -10089,7 +10089,7 @@ which does not exist, yet. -->
 </item>
 <!-- End Leather Duster Schematic -->
 
-<!-- Brass Flashlight -->
+<!-- Homemade Flashlight -->
 <item id="2046" name="homemadeFlashlight">
 	<property name="CustomIcon" value="brassFlashlight" />
 	<property name="Class" value="ItemClassToggle" />
@@ -10155,7 +10155,7 @@ which does not exist, yet. -->
 	<property name="DescriptionKey" value="potatoBatteryDesc" />
 	<property name="CraftingSkillGroup" value="Science"/>
 </item>
-<!-- End Brass Flashlight -->
+<!-- End Homemade Flashlight -->
 
 <!-- Kukri -->
 <item id="2050" name="carbonSteel">

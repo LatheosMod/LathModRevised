@@ -2469,8 +2469,8 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="scrapCable" count="1" scrapable="False" >
-    <ingredient name="electricParts" count="2" />
-    <ingredient name="scrapPlastics" count="5" />
+    <ingredient name="electricParts" count="5" />
+    <ingredient name="scrapPlastics" count="8" />
 </recipe>	
 
 <recipe name="calipers" count="1" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
@@ -2495,13 +2495,13 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <recipe name="homemadelashlightBarrel" count="1" scrapable="True" >
     <ingredient name="shortMetalPipe" count="1" />
-    <ingredient name="electricParts" count="1" />
-    <ingredient name="scrapBrass" count="5" />
+    <ingredient name="electricParts" count="10" />
+    <ingredient name="mechanicalParts" count="5" />
 </recipe>
 
 <recipe name="homemadeFlashlightCap" count="1" scrapable="True" >
     <ingredient name="shortMetalPipe" count="1" />
-    <ingredient name="scrapBrass" count="5" />
+    <ingredient name="electricParts" count="5" />
     <ingredient name="spring" count="1" />
 </recipe>
 
@@ -2555,16 +2555,16 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- Iron Bows -->
 <recipe name="IronBow" count="1" scrapable="True" craft_area="workbench" >
-	<ingredient name="forgedIron" count="6" />
+	<ingredient name="forgedIron" count="12" />
 	<ingredient name="scrapCable" count="3" />
-	<ingredient name="leather" count="1" />
+	<ingredient name="leather" count="5" />
 </recipe>
 	
 <recipe name="ironCrossbow" count="1" scrapable="True" craft_area="workbench" >
-	<ingredient name="forgedIron" count="5" />
+	<ingredient name="forgedIron" count="20" />
 	<ingredient name="scrapCable" count="4" />
-	<ingredient name="wood" count="3" />
-	<ingredient name="mechanicalParts" count="2" />
+	<ingredient name="wood" count="5" />
+	<ingredient name="mechanicalParts" count="10" />
 </recipe>
 <!-- End Iron Bows -->
 
@@ -2638,28 +2638,28 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 	
 <recipe name="partscrossbowStock" count="1" scrapable="False" craft_area="workbench" >
-	<ingredient name="wood" count="5"/>
+	<ingredient name="wood" count="15"/>
 	<ingredient name="Sandpaper" count="3"/>
-	<ingredient name="glue" count="1"/>
+	<ingredient name="glue" count="5"/>
 	<ingredient name="spring" count="2"/>
 </recipe>
 	
 <recipe name="partscrossbowLimb" count="1" scrapable="False" craft_area="workbench" >
 	<ingredient name="forgedIron" count="20"/>
-	<ingredient name="mechanicalParts" count="5"/>
+	<ingredient name="mechanicalParts" count="10"/>
 	<ingredient name="scrapCable" count="5"/>
 </recipe>
 	
 <recipe name="partscrossbowDeck" count="1" scrapable="False" craft_area="forge" craft_tool="anvil" material_based="true">
-	<ingredient name="unit_iron" count="20"/>
-	<ingredient name="unit_clay" count="10"/>
-	<ingredient name="unit_brass" count="10"/>
+	<ingredient name="unit_iron" count="120"/>
+	<ingredient name="unit_clay" count="15"/>
+	<ingredient name="unit_brass" count="50"/>
 </recipe>
 	
 <recipe name="partscrossbowScope" count="1" scrapable="False" craft_area="forge" craft_tool="calipers" material_based="true">
-	<ingredient name="unit_brass" count="30"/>
-	<ingredient name="unit_clay" count="10"/>
-	<ingredient name="unit_glass" count="20"/>
+	<ingredient name="unit_brass" count="50"/>
+	<ingredient name="unit_clay" count="15"/>
+	<ingredient name="unit_glass" count="40"/>
 </recipe>
 <!-- End Repeating Crossbow -->
 
@@ -2672,7 +2672,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	
 <recipe name="poopLauncher" count="1" scrapable="True" >
     <ingredient name="wood" count="10"/>
-    <ingredient name="scrapIron" count="5"/>
+    <ingredient name="scrapIron" count="25"/>
     <ingredient name="yuccaFibers" count="4"/>
 </recipe>
 <!-- End Poop Launcher -->
@@ -2744,15 +2744,15 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 
 <recipe name="partsrifleScope" count="1" scrapable="True" craft_area="forge" craft_tool="calipers" material_based="true" >
-	<ingredient name="unit_brass" count="30"/>
-	<ingredient name="unit_clay" count="10"/>
-	<ingredient name="unit_glass" count="20"/>
+	<ingredient name="unit_brass" count="50"/>
+	<ingredient name="unit_clay" count="15"/>
+	<ingredient name="unit_glass" count="40"/>
 </recipe>	
 
 <recipe name="partsSuppressor" count="1" scrapable="True" >
-    <ingredient name="shortMetalPipe" count="1" />
-    <ingredient name="cloth" count="4" />
-    <ingredient name="scrapCable" count="2" />
+    <ingredient name="shortMetalPipe" count="2" />
+    <ingredient name="cloth" count="10" />
+    <ingredient name="electronicParts" count="10" />
 	</recipe>
 	
 <recipe name="partssuppressedhuntingRifleBarrel" count="1" scrapable="True">
@@ -2784,17 +2784,17 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- Seagrave Fireaxe -->
 <recipe name="SeagraveFireaxe" count="1" scrapable="True" >
 	<ingredient name="nail" count="5" />
-	<ingredient name="forgedSteel" count="5" />
-	<ingredient name="wood" count="5" />
+	<ingredient name="forgedSteel" count="20" />
+	<ingredient name="wood" count="10" />
 </recipe>
 <!-- End Seagrave Fireaxe -->
 	
 <!-- Bagged Meat -->
-<recipe name="BaggedMeat" count="1" scrapable="False" craft_time="1">
+<recipe name="BaggedMeat" count="1" scrapable="False" craft_time="1.5">
     <ingredient name="rawMeat" count="1"/>
 	<ingredient name="ZiplockBag" count="1"/>
 </recipe>
-<recipe name="rawMeat" count="1" scrapable="False" >
+<recipe name="rawMeat" count="1" scrapable="False" craft_time="1.5">
     <ingredient name="BaggedMeat" count="1"/>
 </recipe>
 <recipe name="ZiplockBag" count="1" >
@@ -2891,14 +2891,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- Kukri -->
 <recipe name="carbonSteel" count="1" scrapable="false" craft_area="workbench">
-	<ingredient name="forgedSteel" count="4" />
-	<ingredient name="coal" count="4" />
-	<ingredient name="clayLump" count="2" />
+	<ingredient name="forgedSteel" count="5" />
+	<ingredient name="coal" count="25" />
+	<ingredient name="clayLump" count="10" />
 </recipe>
 
 <recipe name="kukri" count="1" scrapable="true">
-	<ingredient name="carbonSteel" count="2" />
-	<ingredient name="wood" count="2" />
+	<ingredient name="carbonSteel" count="8" />
+	<ingredient name="wood" count="5" />
 </recipe>
 <!-- End Kukri -->
 
@@ -2930,9 +2930,10 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 
 <!-- Elevator -->
 <recipe name="elevatorTest" count="1" scrapable="False" craft_area="workbench" >
-	<ingredient name="forgedIron" count="20"/>
+	<ingredient name="forgedIron" count="80"/>
 	<ingredient name="smallEngine" count= "1"/>
 	<ingredient name="scrapCable" count="10"/>
+	<ingredient name="mechanicalParts" count="25"/>
 </recipe>
 <!-- End Elevator -->
 

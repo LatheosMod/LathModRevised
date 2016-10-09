@@ -478,3 +478,6 @@ Added CraftingSkillGroup of Science to carbon steel
 Changed requirement for Masamune, Jr. to Steel Smithing level 2 and Science 15
 Added recipe for machete to Advanced Tooling
 Added scrapCable to harvest for refrigerators and cars
+Rebalanced recipes with higher required item counts to bring more in line with the vanilla items
+Changed material of Ziplock Bags to Mplastics
+
