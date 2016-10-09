@@ -4445,6 +4445,7 @@ trapNailMineDesc,blocks,Traps,KgNone,This trap deals damage to anyone who trigge
 refinedCoal,items,Item,KgNone,Refined Coal,,
 refinedCoalDesc,items,Item,KgNone,Coal processed at a workbench to burn for far longer.,,
 AdvancedTooling,progression,Skill,KgNone,Advanced Tooling,,
+AdvancedToolingSkillDesc,progression,Skill,KgNone,"With this perk you can craft the forge, workstation, calipers, and machete.",,
 qc_shittywaytodie,items,Zombie Challenge Note,KgNone,Shitty Way to Die Challenge,,
 elevatorTest,blocks,Block,KgNone,Elevator,,
 elevatorTestDesc,blocks,Block,KgNone,"An elevator that traverses eight blocks up and down.",,
