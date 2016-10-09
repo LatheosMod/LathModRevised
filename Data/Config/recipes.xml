@@ -2938,7 +2938,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- End Elevator -->
 
 <!-- Salted Meat -->
-<recipe name="saltedMeat" count="1" >
+<recipe name="saltedMeat" count="1" craft_time="2">
 	<ingredient name="rottingFlesh" count="1"/>
 	<ingredient name="potassiumNitratePowder" count="2"/>
 </recipe>

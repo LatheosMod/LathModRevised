@@ -38,11 +38,12 @@ New Items
 	Craftable Calipers in the forge
 	Craftable Beaker in the forge
 	Carbon Steel
-	Brass Flashlight (used with lighted helmets; the vanilla flashlight is used with weapons only)
+	Homemade Flashlight (used with lighted helmets; the vanilla flashlight is used with weapons only)
 	Alternate arrow and crossbow bolt recipes
-	Refined coal (crafted at the workbench from 25 coal, burning for 15 minutes)
+	Refined coal (crafted at the chemistry workbench from 25 coal, burning for 15 minutes)
 	Salted Meat
 	D Cell Battery
+	Fuel Log (crafted in the workbench, it burns for 9 minutes)
 
 New Armor
 	Helmet lights for cloth hat, cowboy hat, football helmet, iron helmet, military helmet, leather hood, scrap helmet. swat helmet
@@ -50,8 +51,7 @@ New Armor
 	Craftable Leather Duster
 
 New Blocks
-    Valmar's Fuel Logs (Burns for 9 minutes)(Craftable at the workbench)
-    Elevator
+    Elevator (crafted at the workbench)
 	Craftable Metal Pipes in the forge (straight, corner, joint, cap, valve, and flange)
 	Valmar's Expanded Traps (Fire, Adhesive, Nail Mine)
 	Safed Fire Trap
