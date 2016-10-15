@@ -752,9 +752,11 @@
 			<multiply skill_level="70,100" value=".44,.167" />
 		</effect>
 	</crafting_skill>
-	<perk name="Leather Tanning" icon="armor_leather" description_key="leatherTanningPerkDesc" title_key="leatherTanningPerk" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
+	<perk name="Leather Tanning" icon="armor_leather" description_key="leatherTanningPerkDesc" title_key="leatherTanningPerk" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
 		<requirement skill_level="1" required_skill_name="Leatherworking" required_skill_level="1"/>
 		<recipe name="leather" unlock_level="1"/>
+		<requirement skill_level="2" required_skill_name="Leatherworking" required_skill_level="25"/>
+		<recipe name="leatherDuster" unlock_level="2"/>
 	</perk>
 
 	<crafting_skill name="Armor Smithing" icon="forge" description_key="armorerDesc" title_key="armorer" group="clothing">
@@ -1098,14 +1100,14 @@
 		<recipe name="gunsuppressedSniperRifle" unlock_level="1"/>
 	</perk>
 	
-	<perk name="Masamune, Jr." icon="weapon_smithing" description_key="MasamuneJrDesc" title_key="MasamuneJr" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" >
+	<perk name="Masamune, Jr." icon="weapon_smithing" description_key="MasamuneJrDesc" title_key="MasamuneJr" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" >
 		<requirement skill_level="1" required_skill_name="Steel Smithing" required_skill_level="2"/>
 		<requirement skill_level="1" required_skill_name="Science" required_skill_level="15"/>
 		<recipe name="kukri" unlock_level="1"/>
 		<recipe name="carbonSteel" unlock_level="1"/>
 	</perk>
 	
-	<perk name="Advanced Tooling" icon="resource" description_key="AdvancedToolingSkillDesc" title_key="AdvancedTooling" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="tools">
+	<perk name="Advanced Tooling" icon="resource" description_key="AdvancedToolingSkillDesc" title_key="AdvancedTooling" max_level="1" skill_point_cost_multiplier="0" skill_point_cost_per_level="15" group="tools">
 		<requirement skill_level="1" required_skill_name="Construction Tools" required_skill_level="30"/>
 		<recipe name="workbench" unlock_level="1"/>
 		<recipe name="forge" unlock_level="1"/>
@@ -1113,7 +1115,18 @@
 		<recipe name="machete" unlock_level="1"/>
 	</perk>
 	
-<!-- Carpentry skill and perk -->
+	<perk name="Clothier" icon="tailoring" description_key="clothierDesc" title_key="Clothier" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
+		<requirement skill_level="1" required_skill_name="Tailoring" required_skill_level="10"/>
+		<recipe name="tshirtWhite" unlock_level="1"/>
+		<recipe name="shirt" unlock_level="1"/>
+		<requirement skill_level="2" required_skill_name="Tailoring" required_skill_level="30"/>
+		<recipe name="denimShortsPants" unlock_level="2"/>
+		<recipe name="denimPants" unlock_level="2"/>
+		<requirement skill_level="3" required_skill_name="Tailoring" required_skill_level="50"/>
+		<recipe name="sweatshirt" unlock_level="3"/>
+		<recipe name="hoodedSweatshirtWhite" unlock_level="3"/>
+	</perk>
+	
 	<action_skill name="Carpentry Tools" icon="mining" description_key="carpentryToolsDesc" title_key="carpentryTools" group="tools">
 		<effect name="BlockDamage">
 			<multiply skill_level="1,10" value="1.00,1.32"/>
@@ -1150,9 +1163,7 @@
 			<multiply skill_level="5" value="0.5"/>
 		</effect>
 	</perk>
-<!-- End Carpentry skill and perk -->
 
-<!-- William Tell -->
 	<perk name="William Tell" icon="archery" description_key="WilliamTellDesc" title_key="WilliamTell" max_level="5" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="weapons">
 		<requirement perk_level="1" required_skill_name="Archery" required_skill_level="1"/>
 		<requirement perk_level="2" required_skill_name="Archery" required_skill_level="20"/>
@@ -1174,7 +1185,7 @@
 			<add skill_level="5" value="0.4"/>
 		</effect>
 	</perk>
-<!-- End William Tell -->	
+	
 <!-- End New Perks -->	
 	
 </skills>

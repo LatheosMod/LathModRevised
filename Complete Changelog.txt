@@ -482,3 +482,15 @@ Rebalanced recipes with higher required item counts to bring more in line with t
 Changed material of Ziplock Bags to Mplastics
 Reduced crafting time of salted meat
 Added missing localization for AdvancedToolingSkillDesc
+
+----->15 Oct 2016<-----
+LathMod 4.02
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Added <property name="CraftingSkillGroup" value="Carpentry Tools"/> to blocks woodFrameMaster, rwoodmaster, woodmaster (blocks 147-149)
+Added tshirt, shirt, denim pants, denim shorts, sweatshirt, and hooded sweatshirt to recipes
+Added Clothier perk which allows crafting of tshirt, shirt, denim pants, denim shorts, sweatshirt, and hooded sweatshirt
+Added second level to leather tanning perk, unlocking leather duster at skill level 25 of leatherworking skill
+Disabled the leather duster schematic
+Increased cost of Advanced Tooling perk to 15 from 10
+Increased cost of Masamune, Jr. perk to 15 from 10
+

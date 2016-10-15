@@ -1179,6 +1179,7 @@ group desc for stuff like metal siding
 	<drop event="Harvest" name="wood" count="3" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="148" name="woodMaster">
@@ -1201,6 +1202,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="149" name="woodFrameMaster">
@@ -1227,6 +1229,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="woodDebris" count="1" prob=".3" stick_chance="1" />
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <!-- ****************************  Main Blocks  **************************** -->

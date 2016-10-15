@@ -1513,9 +1513,11 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="leatherBoots" count="1">
 	<ingredient name="leather" count="5"/>
 </recipe>
+
 <recipe name="leatherDuster" count="1">
 	<ingredient name="leather" count="20"/>
 </recipe>
+
 <recipe name="leatherGloves" count="1">
 	<ingredient name="leather" count="5"/>
 </recipe>
@@ -2951,6 +2953,31 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 <!-- End Machete -->
 
+<!-- Clothing -->
+<recipe name="tshirtWhite" count="1">
+	<ingredient name="cloth" count="12"/>
+</recipe>
+
+<recipe name="shirt" count="1">
+	<ingredient name="cloth" count="16"/>
+</recipe>
+
+<recipe name="denimShortsPants" count="1">
+	<ingredient name="cloth" count="18"/>
+</recipe>
+
+<recipe name="denimPants" count="1">
+	<ingredient name="cloth" count="26"/>
+</recipe>
+
+<recipe name="sweatshirt" count="1">
+	<ingredient name="cloth" count="24"/>
+</recipe>
+
+<recipe name="hoodedSweatshirtWhite" count="1">
+	<ingredient name="cloth" count="30"/>
+</recipe>
+<!-- End Clothing -->
 
 <!-- End Custom Recipes -->
 

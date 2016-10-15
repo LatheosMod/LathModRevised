@@ -707,7 +707,7 @@
 	<item name="nailgunSchematic"/>
 	<item group="questChallenge" count="1"/>
 	<item name="SeagraveFireaxeSchematic"/>
-	<item name="leatherDusterSchematic"/>
+	<!-- <item name="leatherDusterSchematic"/> -->
 	<!--
 	<item name="handleBarsSchematic"/>
 	<item name="theRiddleOfSteel"/>

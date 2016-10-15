@@ -10076,17 +10076,18 @@ which does not exist, yet. -->
 </item>		
 <!-- End Poop Cannon -->
 	
-<!-- Leather Duster Schematic-->
+<!-- Leather Duster Schematic -->
+<!-- Removed in favor of second level of tanning perk
 <item id="2045" name="leatherDusterSchematic">
 	<property name="DescriptionKey" value="leatherDusterSchematicDesc" />
 	<property name="CustomIcon" value="leatherDusterSchematic" />
 	<property name="Extends" value="schematicMaster" />
 	<property class="Action1">
-		<!-- UseAction -->
 		<property name="Recipes_to_learn" value="leatherDuster" />
 		<property name="Skills_to_gain" value="Leatherworking" />
     </property>
 </item>
+-->
 <!-- End Leather Duster Schematic -->
 
 <!-- Homemade Flashlight -->

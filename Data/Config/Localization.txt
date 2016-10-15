@@ -2424,7 +2424,7 @@ concreteMixingDesc,progression,Perk,EnChanged,Unlocks the ability to make cement
 deadShot,progression,Perk,KgNone,Dead Shot,Dans le mille,Volltreffer,,Buena puntería
 deadShotDesc,progression,Perk,KgNone,Shoot them dead with style!  Increase your pistol's chance to blow off heads and limbs with every rank.,Tuez-les avec classe ! Améliorez vos chances d'exploser des têtes et des membres avec votre pistolet au fil des rangs.,"Erschieße sie mit Stil! Erhöhe die Chance deiner Pistole, mit jedem Rang Köpfe und Gliedmaßen abzuschießen.",,¡Mátalos con estilo! Aumenta las posibilidades de que el revólver haga que los sesos y las extremidades de los enemigos salgan volando con nada nivel.
 leatherTanningPerk,progression,Perk,KgNone,Leather Tanning,« Tanner le cuir »,Leder gerben,,Curtido de cuero
-leatherTanningPerkDesc,progression,Perk,KgNone,Unlocks the ability to craft leather from animal hides or by scrapping leather items.,Déverrouille la possibilité de fabriquer du cuir avec des peaux de bête ou en recyclant des objets en cuir.,Schaltet die Gewinnung von Leder durch Tierhäute oder zerlegte Ledergegenstände frei.,,Desbloquea la habilidad de fabricar cuero a partir de pieles de animales o reutilizando objetos de cuero.
+leatherTanningPerkDesc,progression,Perk,KgNone,Unlocks the ability to craft leather from animal hides or by scrapping leather items. Purchse the second level to craft the leather duster.,Déverrouille la possibilité de fabriquer du cuir avec des peaux de bête ou en recyclant des objets en cuir.,Schaltet die Gewinnung von Leder durch Tierhäute oder zerlegte Ledergegenstände frei.,,Desbloquea la habilidad de fabricar cuero a partir de pieles de animales o reutilizando objetos de cuero.
 lockpicking,progression,Perk,KeyTrunk FrNone GrNone KgNone SpNone,Lock Picking,,,,
 lockpickingDesc,progression,Perk,KeyTrunk FrNone GrNone KgNone SpNone,Open locks without alerting deceased home-owners.,,,,
 secretStash,progression,Perk,KeyTrunk FrNone GrNone KgNone SpNone,Secret Stash,,,,
@@ -4463,3 +4463,5 @@ trapFireSafed,blocks,Traps,KgNone,Safed Fire Trap,,
 trapFireSafedDesc,blocks,Traps,KgNone,"A safed fire trap, allowing undamaged passage over the block. Can be returned to action by upgrading to an empty fire tap, then filling with gas.",,
 scrapCable,items,Item,KgNone,Scrap Cable,,
 scrapCableDesc,items,Item,KgNone,Scrap cable can be used to make parts for vehicles and more.,,
+Clothier,progression,Skill,KgNone,Clothier,,
+clothierDesc,progression,Skill,KgNone,"Craft better clothing than plant fiber with this perk.",,
