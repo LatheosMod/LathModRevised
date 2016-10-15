@@ -1,7 +1,7 @@
 # LathModRevised
 Alpha 15 compatible
 
-4.01 Update
+4.02 Update
 
 This mod adds suppressed firearms (including the AK47), iron bows and crossbows, a modular repeating crossbow, and a few other bits and bobs. 
 
