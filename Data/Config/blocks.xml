@@ -801,7 +801,9 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="woodDebris" count="1" prob=".3" stick_chance="1" />
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
+
 <block id="126" name="woodNoUpgradeMaster">
 	<property name="Group" value="Building" />
 	<property name="Material" value="wood" />
@@ -814,6 +816,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="127" name="redWoodMaster">
@@ -837,6 +840,7 @@ group desc for stuff like metal siding
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="EconomicValue" value="35" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="128" name="treeMaster">
@@ -2122,6 +2126,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" count="0" />
 	<property name="Group" value="Building" />
 	<property name="EconomicValue" value="6" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="269" name="cntStorageHealthInsecure">
@@ -2497,6 +2502,7 @@ group desc for stuff like metal siding
 	<property name="CanPickup" value="true" />
 	<property name="EconomicValue" value="11" />
 	<property name="EconomicBundleSize" value="2" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="313" name="sectionalMiddle">
@@ -2693,6 +2699,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="332" name="cntChest02">
@@ -2762,6 +2769,7 @@ group desc for stuff like metal siding
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="EconomicValue" value="6" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="338" name="cntSuitcase">
@@ -2790,6 +2798,7 @@ group desc for stuff like metal siding
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="340" name="cntTrashPile01">
@@ -3435,6 +3444,7 @@ group desc for stuff like metal siding
 	<property name="Group" value="Tools/Traps" />
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="50" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="409" name="trapSpikesDamage1">
@@ -3539,6 +3549,7 @@ group desc for stuff like metal siding
 	<property name="DescriptionKey" value="woodLogSpike1Desc"/>
 	<property name="EconomicValue" value="30" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="419" name="corrugatedMetalCNRInside">
@@ -4346,6 +4357,7 @@ kind of free
 	<property name="CanPickup" value="true" />
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
 	<drop event="Destroy" name="wood" count="6" prob="1" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="519" name="cntDesk01">
@@ -4362,6 +4374,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="6" prob="1" />
 	<property name="EconomicValue" value="15" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="520" name="cntDesk02">
@@ -4643,6 +4656,7 @@ kind of free
 	<property name="Collide" value="movement,melee,bullet,arrow,rocket" />
 	<property name="FuelValue" value="32" />
 	<property name="DescriptionKey" value="furnitureGroupDesc"/>
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="548" name="endTableLamp">
@@ -4777,6 +4791,7 @@ kind of free
 	<drop event="Harvest" name="forgedSteel" count="2" prob="0.5" />
 	<drop event="Destroy" name="scrapIron" count="30" prob="1" />
 	<property name="EconomicValue" value="250" /> <!-- disassemble value -->
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="558" name="ironBars">
@@ -5510,6 +5525,7 @@ kind of free
 	<property name="Group" value="Building,Basics" />
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="10" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="632" name="blueMetalRamp1">
@@ -5572,6 +5588,7 @@ kind of free
 	<property name="DescriptionKey" value="cntSecureStorageChestDesc"/>
 	<property name="EconomicValue" value="10" />
 	<property name="EconomicBundleSize" value="10" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="640" name="rockResource02"> <!-- biome decoration -->
@@ -5689,6 +5706,7 @@ kind of free
 	<property name="Model" value="arrow_slit_half" /> <property name="Place" value="TowardsPlacerInverted" />
 	<property class="UpgradeBlock"> <property name="ToBlock" value="rWoodArrowSlitHalf" /> </property>
 	<property name="DescriptionKey" value="woodArrowSlitGroupDesc"/>
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="650" name="stainlessSteelWedgeTip">
@@ -6399,6 +6417,7 @@ kind of free
 	<property name="LootList" value="60" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="726" name="concreteTrim2TanDrywallBlock">
@@ -6481,6 +6500,7 @@ kind of free
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property class="RepairItems"> <property name="wood" value="10" /> </property>
 	<property name="EconomicValue" value="30" /> <!-- disassemble value -->
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="738" name="adobeWhitePlate">
@@ -6899,6 +6919,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="1,3" />
 	<property name="EconomicValue" value="6" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="789" name="stainlessSteelPyramid">
@@ -7198,6 +7219,7 @@ kind of free
 	<property name="Shape" value="Half" />
 	<property name="Texture" value="241" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="831" name="tanStuccoBlock">
@@ -7218,6 +7240,7 @@ kind of free
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property class="RepairItems"> <property name="wood" value="8" /> </property>
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="834" name="concreteStairs50">
@@ -7263,6 +7286,7 @@ kind of free
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="EconomicValue" value="17" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="839" name="woodQuarter">
@@ -7270,6 +7294,7 @@ kind of free
 	<property name="Shape" value="Quarter" />
 	<property name="Texture" value="241" />
 	<drop event="Destroy" count="0" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="840" name="cntFridgeTop">
@@ -7721,6 +7746,7 @@ kind of free
 	<property class="RepairItems"> <property name="wood" value="5" /> </property>
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="894" name="woodFenceFarmSheet">
@@ -7736,6 +7762,7 @@ kind of free
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="895" name="whitePicketFenceSheet">
@@ -7751,6 +7778,7 @@ kind of free
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="896" name="wroughtIronFenceSheet">
@@ -8820,6 +8848,7 @@ kind of free
 	<property name="Group" value="Building" />
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="10" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1063" name="adobeWhiteArrowSlitHalf">
@@ -9354,6 +9383,7 @@ kind of free
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1144" name="railingOldWoodSheet">
@@ -9462,6 +9492,7 @@ kind of free
 	<property name="Texture" value="345" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1163" name="cabinetOldFiller2Block">
@@ -9469,6 +9500,7 @@ kind of free
 	<property name="Texture" value="84,84,82,82,82,82" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1164" name="commercialDoor1_v1">
@@ -9927,30 +9959,35 @@ kind of free
 	<property name="Extends" value="cntStorageHealth" />
 	<property name="Texture" value="418" />
 	<property name="DowngradeBlock" value="cntStorageAmmoInsecure" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1222" name="cntStorageBuilding">
 	<property name="Extends" value="cntStorageHealth" />
 	<property name="Texture" value="419" />
 	<property name="DowngradeBlock" value="cntStorageBuildingInsecure" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1223" name="cntStorageExplosives">
 	<property name="Extends" value="cntStorageHealth" />
 	<property name="Texture" value="420" />
 	<property name="DowngradeBlock" value="cntStorageExplosivesInsecure" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1224" name="cntStorageFood">
 	<property name="Extends" value="cntStorageHealth" />
 	<property name="Texture" value="421" />
 	<property name="DowngradeBlock" value="cntStorageFoodInsecure" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1225" name="cntStorageWeapons">
 	<property name="Extends" value="cntStorageHealth" />
 	<property name="Texture" value="422" />
 	<property name="DowngradeBlock" value="cntStorageWeaponsInsecure" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1226" name="houseFrontDoor2_v1">
@@ -10184,6 +10221,7 @@ kind of free
 	<property name="Group" value="Building" />
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="10" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1252" name="woodHatch1_v2">
@@ -10347,6 +10385,7 @@ kind of free
 	<property name="DescriptionKey" value="woodCatwalkGroupDesc"/>
 	<property name="EconomicValue" value="20" />
 	<property name="EconomicBundleSize" value="20" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1272" name="woodCatwalkRailing">
@@ -10884,6 +10923,7 @@ kind of free
 	<property name="DescriptionKey" value="woodFrameGroupDesc"/>
 	<drop event="Destroy" name="wood" count="1" prob="1" />
 	<drop event="Fall" name="woodDebris" count="1" prob="0.75" stick_chance="1" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1352" name="flagstoneStairs25">
@@ -11391,6 +11431,7 @@ kind of free
 	<property name="Group" value="Decor/Miscellaneous" />
 	<property name="EconomicValue" value="55" />
 	<property name="EconomicBundleSize" value="10" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1417" name="redWoodTable">
@@ -12028,6 +12069,7 @@ kind of free
 	<property name="MultiBlockDim" value="1,1,2" />
 	<property name="LootList" value="1" />
 	<drop event="Destroy" name="wood" count="1" prob="1" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1469" name="vaultHatch_v1">
@@ -12638,6 +12680,7 @@ kind of free
 	<property name="EconomicValue" value="776" />
 	<property name="Place" value="TowardsPlacerInverted" />
 	<property name="RotationAllowed" value="pivotOnFloor" />
+	<property name="CraftingSkillGroup" value="Carpentry Tools"/>
 </block>
 
 <block id="1564" name="treePlantedWinterPine1m">
@@ -13704,6 +13747,7 @@ kind of free
 	<property name="DescriptionKey" value="lightGroupDesc"/>
 </block>
 
+<!-- Custom Blocks -->
 <!-- Fuel Log -->
 <block id="2000" name="Fuel Log">
 	<property name="CustomIcon" value="fuelLog" />
@@ -13715,6 +13759,7 @@ kind of free
 	<property name="FuelValue" value="540" />
 	<drop event="Destroy" name="fuelLog" count="1" />
 	<property name="DescriptionKey" value="FuelLogDesc" />
+	<property name="EconomicValue" value="95" />
 	<property name="Group" value="Resources" />
 </block>
 <!-- End Fuel Log -->
@@ -13737,6 +13782,7 @@ kind of free
 	<property class="RepairItems">
 		<property name="glassCTRSheet" value="3" />
 	</property>
+	<property name="EconomicValue" value="35" />
 	<property name="Group" value="Building" />
 </block>
 
@@ -13757,6 +13803,7 @@ kind of free
 	<property class="RepairItems">
 		<property name="glassCTRSheet" value="3" />
 	</property>
+	<property name="EconomicValue" value="35" />
 	<property name="Group" value="Building" />
 </block>
 
@@ -13777,6 +13824,7 @@ kind of free
 	<property class="RepairItems">
 		<property name="glassCTRSheet" value="3" />
 	</property>
+	<property name="EconomicValue" value="35" />
 	<property name="Group" value="Building" />
 </block> 
 <!-- End Lighted Glass Blocks -->
@@ -13800,6 +13848,7 @@ kind of free
 	<property name="DowngradeBlock" value="trapFireEmpty" />
 	<drop event="Destroy" count="0" prob="1" />
 	<drop event="Fall" name="scrapMetalPile" count="1" prob="1.0"  stick_chance="1" />
+	<property name="EconomicValue" value="390" />
 	<property name="Group" value="Tools/Traps" />
 </block>
 	
@@ -13832,6 +13881,7 @@ kind of free
 	<property class="RepairItems">
 		<property name="wood" value="5" />
 	</property>
+	<property name="EconomicValue" value="90" />
 	<property name="Group" value="Tools/Traps" />
 	<drop event="Fall" count="0"/>
 </block>
@@ -13851,6 +13901,7 @@ kind of free
 	<!-- damage radius for entities -->
 	<property name="DropScale" value="3" />
 	<drop event="Destroy" count="0" />
+	<property name="EconomicValue" value="105" />
 	<property name="Group" value="Tools/Traps" />
 </block>
 

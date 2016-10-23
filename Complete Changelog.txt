@@ -494,3 +494,17 @@ Disabled the leather duster schematic
 Increased cost of Advanced Tooling perk to 15 from 10
 Increased cost of Masamune, Jr. perk to 15 from 10
 
+-----22 Oct 2016<-----
+LathMod 4.1
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Added <property name="CraftingSkillGroup" value="Carpentry Tools"/> to remaining wood-based blocks
+Changed Torch Hat to Plant Fiber Hat (Light), crafted with homemade flashlight instead of torch
+Renamed all lighted helmets (e.g., Cloth Hat (Light) changed to ClothHatLight) to line up with regular items
+Added IronHelmetLight, ScrapHelmetLight, LeatherHoodLight to respective schematics, locking them until schematic is read
+Commented out <property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab" /> from the lighted helmets, as it may not be necessary
+Added lighted versions of heavy bandit gasmask, hazmat mssk, and animal hide hood
+Added EconomicValue to all custom items
+Added flaming crossbow bolts
+Added missing item group to Iron Bow
+Reduced CraftingIngredientTime for cotton plant from 5 to 2
+

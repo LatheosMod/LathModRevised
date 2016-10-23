@@ -2571,59 +2571,78 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- End Iron Bows -->
 
 <!-- Lighted Helmets -->
-<recipe name="Cloth Hat (Light)" count="1" scrapable="False" >
+<recipe name="ClothHatLight" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
 	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="clothHat" count="1" />
 </recipe>
 
-<recipe name="Cowboy Hat (Light)" count="1" scrapable="False" >
+<recipe name="CowboyHatLight" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
 	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="cowboyHat" count="1" />
 </recipe>
 	
-<recipe name="Football Helmet (Light)" count="1" scrapable="False" >
+<recipe name="FootballHelmetLight" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
 	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="footballHelmet" count="1" />
 </recipe>
 
-<recipe name="Iron Helmet (Light)" count="1" scrapable="False" >
+<recipe name="IronHelmetLight" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
 	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="ironHelmet" count="1" />
 </recipe>
 	
-<recipe name="Military Helmet (Light)" count="1" scrapable="False" >
+<recipe name="MilitaryHelmetLight" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
 	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="militaryHelmet" count="1" />
 </recipe>
 	
-<recipe name="Leather Hood (Light)" count="1" scrapable="False" >
+<recipe name="LeatherHoodLight" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
 	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="leatherHood" count="1" />
 </recipe>
 	
-<recipe name="Scrap Helmet (Light)" count="1" scrapable="False" >
+<recipe name="ScrapHelmetLight" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
 	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="scrapHelmet" count="1" />
 </recipe>
 			
-<recipe name="Swat Helmet (Light)" count="1" scrapable="False" >
+<recipe name="SwatHelmetLight" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
 	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="swatHelmet" count="1" />
 </recipe>
-	
-<recipe name="Torch Hat (Light)" count="1" scrapable="False" >
+
+<recipe name="plantFiberHatLight" count="1" scrapable="False" >
     <ingredient name="ductTape" count="1" />
-	<ingredient name="torch" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
     <ingredient name="plantFiberHat" count="1" />
 </recipe>
+
+<recipe name="heavyBanditGasmaskLight" count="1" scrapable="False" >
+    <ingredient name="ductTape" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
+    <ingredient name="heavyBanditGasmask" count="1" />
+</recipe>
+
+<recipe name="hazmatMaskLight" count="1" scrapable="False" >
+    <ingredient name="ductTape" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
+    <ingredient name="hazmatMask" count="1" />
+</recipe>
+
+<recipe name="animalHideHoodLight" count="1" scrapable="False" >
+    <ingredient name="ductTape" count="1" />
+	<ingredient name="homemadeFlashlight" count="1" />
+    <ingredient name="animalHideHood" count="1" />
+</recipe>
+
 <!-- End Lighted Helmets -->
 
 <!-- Repeating Crossbow -->
@@ -2861,7 +2880,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe> 
 <!-- End Lighted Glass Blocks -->	
 
-<!-- Arrow and Bolt Upgrade -->
+<!-- Arrows and Bolts -->
 <recipe name="ironArrow" count="1" scrapable="False" >
     <ingredient name="arrow" count="1" />
     <ingredient name="ironArrowHead" count="1" />
@@ -2889,7 +2908,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="steelArrowHead" count="1" scrapable="False" craft_area="workbench" >
     <ingredient name="steelArrow" count="1" />
 </recipe>
-<!-- End Arrow and Bolt Upgrade -->
+
+<recipe name="flamingBolt" count="1" craft_area="workbench">
+	<ingredient name="steelCrossbowBolt" count="1"/>
+	<ingredient name="gunPowder" count="2"/>
+	<ingredient name="cloth" count="1"/>
+	<ingredient name="tallow" count="1"/>
+</recipe>
+<!-- End Arrows and Bolts -->
 
 <!-- Kukri -->
 <recipe name="carbonSteel" count="1" scrapable="false" craft_area="workbench">
