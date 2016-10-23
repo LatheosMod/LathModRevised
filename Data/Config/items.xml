@@ -5427,12 +5427,12 @@ which does not exist, yet. -->
 	</property>
 </item>
 
-<item id="589" name="overalls"> <!-- warmClothPants -->
+<item id="589" name="overalls"> <!-- warmLeatherhPants -->
 	<property name="Extends" value="gothicPants" />
 	<property name="Insulation" value="3"/>
 	<!-- <property name="Encumbrance" value="0.001" /> -->
-	<property name="Material" value="cloth" />
-	<property name="RepairTools" value="cloth" />
+	<property name="Material" value="leather" />
+	<property name="RepairTools" value="leather" />
 	<property name="Weight" value="30" />
 	<property name="FuelValue" value="6" />
 	<property name="EconomicValue" value="40" />
