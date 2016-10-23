@@ -43,4 +43,5 @@ Added EconomicValue to all custom items
 Added flaming crossbow bolts
 Added missing item group to Iron Bow
 Reduced CraftingIngredientTime for cotton plant from 5 to 2
-
+Updated icons for homemadeFlashlight and all lighted helmets
+Increased battery count in homemadeFlashlight from 2 to 4

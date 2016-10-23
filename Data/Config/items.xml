@@ -9059,7 +9059,7 @@ which does not exist, yet. -->
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
     <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
-    <property name="CustomIcon" value="footballHelmetLight" />
+    <property name="CustomIcon" value="heavyBanditGasmaskLight" />
 	<!-- <property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab" /> -->
 	<property name="EconomicValue" value="660" />
 	<property name="CraftingSkillGroup" value="Armor Smithing"/>
@@ -9071,7 +9071,7 @@ which does not exist, yet. -->
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
     <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
-    <property name="CustomIcon" value="footballHelmetLight" />
+    <property name="CustomIcon" value="hazmatMaskLight" />
 	<!-- <property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab" /> -->
 	<property name="EconomicValue" value="1800" />
 	<property name="CraftingSkillGroup" value="Armor Smithing"/>
@@ -9083,7 +9083,7 @@ which does not exist, yet. -->
     <property name="Class" value="ItemClassToggle" />
     <property name="ActivateObject" value="miningHelmetLightSource(Clone)" />
     <property name="LightSource" value="Entities/Lighting/miningHelmetLightSource" />
-    <property name="CustomIcon" value="footballHelmetLight" />
+    <property name="CustomIcon" value="animalHideHoodLight" />
 	<!-- <property name="Meshfile" value="Items/Clothing/Head/MiningHelmetPrefab" /> -->
 	<property name="EconomicValue" value="320" />
 	<property name="CraftingSkillGroup" value="Leatherworking"/>
@@ -10141,7 +10141,7 @@ which does not exist, yet. -->
 
 <!-- Homemade Flashlight -->
 <item id="2049" name="homemadeFlashlight">
-	<property name="CustomIcon" value="brassFlashlight" />
+	<property name="CustomIcon" value="homemadeFlashlight" />
 	<property name="Class" value="ItemClassToggle" />
 	<property name="Meshfile" value="Items/Tools/flashlight02Prefab" />
 	<property name="Material" value="brass" />
@@ -10173,7 +10173,7 @@ which does not exist, yet. -->
 </item>
 
 <item id="2050" name="homemadeFlashlightBarrel">
-	<property name="CustomIcon" value="brassFlashlightBarrel" />
+	<property name="CustomIcon" value="homemadeFlashlightBarrel" />
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="PartType" value="Stock" />
@@ -10186,7 +10186,7 @@ which does not exist, yet. -->
 </item>
 
 <item id="2051" name="homemadeFlashlightCap">
-	<property name="CustomIcon" value="brassFlashlightCap" />
+	<property name="CustomIcon" value="homemadeFlashlightCap" />
 	<property name="Meshfile" value="Items/Misc/sackPrefab" />
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="PartType" value="Receiver" />

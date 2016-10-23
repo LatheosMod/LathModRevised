@@ -342,6 +342,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="partsAuger_parts" count="1"/>
 	<ingredient name="partsAuger_blade" count="1"/>
 </recipe>
+
 <recipe name="partsAuger_blade" count="1" craft_area="workbench">
 	<ingredient name="partsAuger_blade" count="1"/>
 	<ingredient name="repairKit" count="1"/>
@@ -351,24 +352,31 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <recipe name="awningRedBlock" count="1">
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningRedCNRFull" count="1">
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningRedCNRInside" count="1">
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningRedCNRRound" count="1">
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningRedCNRRoundTop" count="1">
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningRedGable" count="1">
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningRedPyramid" count="1">
 	<ingredient name="cloth" count="10"/>
 </recipe>
+
 <recipe name="awningRedRamp" count="1">
 	<ingredient name="cloth" count="10"/>
 </recipe>
@@ -2485,14 +2493,14 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
     <ingredient name="homemadeFlashlightBarrel" count="1" />
     <ingredient name="homemadeFlashlightCap" count="1" />
     <ingredient name="headlight" count="1" />
-    <ingredient name="potatoBattery" count="1" />
+    <ingredient name="potatoBattery" count="2" />
 </recipe>
 
 <recipe name="homemadeFlashlight" count="1" scrapable="True" >
     <ingredient name="homemadeFlashlightBarrel" count="1" />
     <ingredient name="homemadeFlashlightCap" count="1" />
     <ingredient name="headlight" count="1" />
-    <ingredient name="dcellBattery" count="2" />
+    <ingredient name="dcellBattery" count="4" />
 </recipe>
 
 <recipe name="homemadeFlashlightBarrel" count="1" scrapable="True" >
