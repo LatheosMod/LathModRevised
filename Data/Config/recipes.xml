@@ -1514,7 +1514,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="wood" count="6"/>
 </recipe>
 
-<recipe name="leather" count="1">
+<recipe name="leather" count="2">
 	<ingredient name="animalHide" count="1"/>
 </recipe>
 

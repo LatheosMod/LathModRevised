@@ -519,3 +519,4 @@ Increased stack size of yuccafruit from 50 to 150
 Increased stack size of gas can from 1000 to 2000
 Fixed incorrect data in Sirillion's SMX UI for rendering minibike stats
 Updated ModInfo.xml to current mod details
+Increased amount of leather crafted from animal hide from 1 to 2
