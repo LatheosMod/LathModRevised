@@ -755,7 +755,7 @@
 	<perk name="Leather Tanning" icon="armor_leather" description_key="leatherTanningPerkDesc" title_key="leatherTanningPerk" max_level="2" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
 		<requirement skill_level="1" required_skill_name="Leatherworking" required_skill_level="1"/>
 		<recipe name="leather" unlock_level="1"/>
-		<requirement skill_level="2" required_skill_name="Leatherworking" required_skill_level="25"/>
+		<requirement skill_level="2" required_skill_name="Leatherworking" required_skill_level="50"/>
 		<recipe name="leatherDuster" unlock_level="2"/>
 	</perk>
 
@@ -1184,6 +1184,18 @@
 			<add skill_level="4" value="0.2"/>
 			<add skill_level="5" value="0.4"/>
 		</effect>
+	</perk>
+	
+	<perk name="Cordwainer" icon="armor_leather" description_key="cordwainerDesc" title_key="cordwainer" max_level="3" skill_point_cost_multiplier="0" skill_point_cost_per_level="10" group="clothing">
+		<requirement skill_level="1" required_skill_name="Leatherworking" required_skill_level="10"/>
+		<recipe name="cowboyBootsBrown" unlock_level="1"/>
+		<recipe name="gothBootsBlack" unlock_level="1"/>
+		<requirement skill_level="2" required_skill_name="Leatherworking" required_skill_level="30"/>
+		<recipe name="gothicPants" unlock_level="2"/>
+		<recipe name="cowboyHat" unlock_level="2"/>
+		<requirement skill_level="3" required_skill_name="Leatherworking" required_skill_level="50"/>
+		<recipe name="overalls" unlock_level="3"/>
+		<recipe name="leatherDusterBlack" unlock_level="3"/>
 	</perk>
 	
 <!-- End New Perks -->	

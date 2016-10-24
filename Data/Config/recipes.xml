@@ -3013,6 +3013,32 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 </recipe>
 <!-- End Clothing -->
 
+<!-- Cordwainer recipes -->
+<recipe name="cowboyBootsBrown" count="1">
+	<ingredient name="leather" count="5"/>
+</recipe>
+
+<recipe name="gothBootsBlack" count="1">
+	<ingredient name="leather" count="5"/>
+</recipe>
+
+<recipe name="gothicPants" count="1">
+	<ingredient name="leather" count="10"/>
+</recipe>
+
+<recipe name="cowboyHat" count="1">
+	<ingredient name="leather" count="5"/>
+</recipe>
+
+<recipe name="overalls" count="1">
+	<ingredient name="leather" count="10"/>
+</recipe>
+
+<recipe name="leatherDusterBlack" count="1">
+	<ingredient name="leather" count="20"/>
+</recipe>
+<!-- End Cordwainer recipes -->
+
 <!-- End Custom Recipes -->
 
 </recipes>

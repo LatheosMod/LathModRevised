@@ -45,3 +45,9 @@ Added missing item group to Iron Bow
 Reduced CraftingIngredientTime for cotton plant from 5 to 2
 Updated icons for homemadeFlashlight and all lighted helmets
 Increased battery count in homemadeFlashlight from 2 to 4
+
+-----23 Oct 2016<-----
+LathMod 4.11
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Increased Leather Tanning level 2 to require leatherworking 50 instead of 25
+Added Cordwainer perk which allows crafting of leather clothing (boots, goth pants, cowboy hat, overalls, and black leather duster)
