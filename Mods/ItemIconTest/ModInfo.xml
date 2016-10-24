@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <xml>
 	<ModInfo>
-		<Name value="Allocs icon loading test" />
-		<Description value="Example for loading custom item icons" />
-		<Author value="Christian 'Alloc' Illy" />
-		<Version value="1" />
-		<Website value="http://7dtd.illy.bz" />
+		<Name value="LathMod Icons" />
+		<Description value="Custom icons for LathMod" />
+		<Author value="Latheos" />
+		<Version value="4.1" />
+		<Website value="https://7daystodie.com/forums/showthread.php?39530-LathMod-Revised" />
 	</ModInfo>
 </xml>

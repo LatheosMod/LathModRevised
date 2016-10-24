@@ -101,23 +101,21 @@
 			<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleBattery" visible="{statvisible}">
 				<sprite depth="3" pos="3,0"  name="BarContent" sprite="{statimage|once}" height="43" width="162" />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="130,-6" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30" />
+				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30"/>
 			</rect>
-
 			<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleFuel" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
 				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{StatImage|once}" type="filled" height="37" width="162" flip="Horizontally" fill="{StatFill}" />
+				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" flip="Horizontally" />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="130,-6" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30" />
+				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30"/>
 			</rect>
-
 			<rect width="168" height="43" controller="HUDStatBar" stat_type="VehicleHealth" visible="{statvisible}">
-				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced" />
+				<sprite depth="1" name="border" color="0,0,0,100" height="43" type="sliced"/>
 				<sprite depth="2" pos="3,-3"  name="background" height="37" width="162" color="64,64,64,100" type="sliced" />
-				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{StatImage|once}" type="filled" height="37" width="162" flip="Horizontally" fill="{StatFill}" />
+				<sprite depth="3" pos="3,-3"  name="BarContent" sprite="{statimage|once}" type="filled" height="37" width="162" flip="Horizontally" />
 				<sprite depth="4" name="Icon" atlas="{staticonatlas|once}" sprite="{staticon|once}" size="32,32" pos="130,-6" foregroundlayer="true" />
-				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30" />
+				<label depth="6" name="TextContent" pos="15,-8" font_size="28" color="[white]" justify="center" text="{statcurrentwithmax}" height="30"/>
 			</rect>
 		</grid>
 

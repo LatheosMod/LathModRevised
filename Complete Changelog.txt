@@ -517,3 +517,5 @@ Increased Leather Tanning level 2 to require leatherworking 50 instead of 25
 Added Cordwainer perk which allows crafting of leather clothing (boots, goth pants, cowboy hat, overalls, and black leather duster)
 Increased stack size of yuccafruit from 50 to 150
 Increased stack size of gas can from 1000 to 2000
+Fixed incorrect data in Sirillion's SMX UI for rendering minibike stats
+Updated ModInfo.xml to current mod details
