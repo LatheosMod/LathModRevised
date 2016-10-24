@@ -5834,7 +5834,7 @@ which does not exist, yet. -->
 	<property name="Meshfile" value="Items/Food/fruit_yucca" />
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="14" />
-	<property name="Stacknumber" value="50" /> <!-- STK food -->
+	<property name="Stacknumber" value="500" /> <!-- STK food -->
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="1" />
 	<property name="SellableToTrader" value="false" />
