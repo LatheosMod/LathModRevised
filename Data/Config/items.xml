@@ -1969,7 +1969,7 @@ which does not exist, yet. -->
 	<property name="DropMeshfile" value="Items/Misc/sack_droppedPrefab" />
 	<property name="HoldType" value="45" />
 	<property name="Material" value="metal" />
-	<property name="Stacknumber" value="1000" /> <!-- STK resource -->
+	<property name="Stacknumber" value="2000" /> <!-- STK resource -->
     <property name="Degradation" value="5000" param1="false" />
 	<property name="FuelValue" value="2" />
 	<property name="EconomicValue" value="83" /> <!-- oil barrel 500 -->
@@ -5834,7 +5834,7 @@ which does not exist, yet. -->
 	<property name="Meshfile" value="Items/Food/fruit_yucca" />
 	<property name="Material" value="organic" />
 	<property name="HoldType" value="14" />
-	<property name="Stacknumber" value="500" /> <!-- STK food -->
+	<property name="Stacknumber" value="150" /> <!-- STK food -->
 	<property name="EconomicValue" value="5" />
 	<property name="EconomicBundleSize" value="1" />
 	<property name="SellableToTrader" value="false" />

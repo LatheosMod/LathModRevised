@@ -51,4 +51,5 @@ LathMod 4.11
 Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
 Increased Leather Tanning level 2 to require leatherworking 50 instead of 25
 Added Cordwainer perk which allows crafting of leather clothing (boots, goth pants, cowboy hat, overalls, and black leather duster)
-Increased stack size of yuccafruit from 50 to 500
+Increased stack size of yuccafruit from 50 to 150
+Increased stack size of gas can from 1000 to 2000
