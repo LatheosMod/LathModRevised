@@ -701,6 +701,7 @@
 	<item name="minibikesForDumbshits"/>
 	<item name="rocketLauncherSchematic"/>
 	<item name="shotgunSlugSchematic"/>
+	<item name="breachingShellSchematic"/>
 	<item name="sledgehammerSchematic"/>
 	<item name="smgSchematics"/>
 	<item name="sniperRifleSchematic"/>
@@ -765,6 +766,7 @@
 	<item name="10mmBullet" count="10,40"/>
 	<item name="762mmBullet" count="5,30"/>
 	<item name="shotgunSlug" count="3,7"/>
+	<item name="breachingShell" count="3,7"/>
 	<item name="rocket" count="1,4"/>
 </lootgroup>
 

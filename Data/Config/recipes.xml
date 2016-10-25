@@ -2564,7 +2564,7 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 <!-- End Misc Items -->
 
 <!-- Iron Bows -->
-<recipe name="IronBow" count="1" scrapable="True" craft_area="workbench" >
+<recipe name="ironBow" count="1" scrapable="True" craft_area="workbench" >
 	<ingredient name="forgedIron" count="12" />
 	<ingredient name="scrapCable" count="3" />
 	<ingredient name="leather" count="5" />
@@ -3038,6 +3038,20 @@ Unfortunately auto-calc only seems to work on the first (top) ingredient in the 
 	<ingredient name="leather" count="20"/>
 </recipe>
 <!-- End Cordwainer recipes -->
+
+<!-- New Ammo -->
+<recipe name="FMJTip" count="1" craft_area="forge" craft_tool="calipers" material_based="true">
+	<ingredient name="unit_lead" count="2"/>
+	<ingredient name="unit_clay" count="1"/>
+	<ingredient name="unit_iron" count="4"/>
+</recipe>
+
+<recipe name="breachingShell" count="1" craft_area="workbench">
+	<ingredient name="FMJTip" count="5"/>
+	<ingredient name="gunPowder" count="8"/>
+	<ingredient name="bulletCasing" count="3"/>
+</recipe>
+<!-- End New Ammo -->
 
 <!-- End Custom Recipes -->
 

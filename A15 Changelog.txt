@@ -56,3 +56,15 @@ Increased stack size of gas can from 1000 to 2000
 Fixed incorrect data in Sirillion's SMX UI for rendering minibike stats
 Updated ModInfo.xml to current mod details
 Increased amount of leather crafted from animal hide from 1 to 2
+
+----->24 Oct 2016<-----
+LathMod 4.2
+Includes stallionsden's Backpack Expansion (75 slots), Valmar's Expanded Traps, SylenThunder's Lighted Glass Blocks, Sirillion's SMX UI
+Increased magazine size on hunting rifle, scoped hunting rifle, and suppressed hunting rifle from 1 to 3
+Added economic bundle size 5 to Ziplock Bags and Sandpaper
+Changed code on ironBow, ironCrossbow, scoped hunting rifle, and all suppressed weapons to extend vanilla versions, resulting in cleaner code
+Added increased damage to ironBow, ironCrossbow
+Changed code on Seagrave Fireaxe to extend fireaxeSteel
+Changed code on flaming crossbow bolt to extend flaming arrow
+Added Breaching Shells, FMJ bullet tips, and breaching shell schematic
+
